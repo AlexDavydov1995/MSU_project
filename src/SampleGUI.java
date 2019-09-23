@@ -1,27 +1,27 @@
 import DataDealer.DataDealer;
+import Math.MathDealer;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import DataDealer.DataDealer;
 
 
 public class SampleGUI implements ActionListener {
     JButton firstButton;
     JTextField myTextField;
     JTextArea myTextArea;
-    String hello = "hello kate";
-    String love = "i love you";
+    String hello = "hello";
+    String bye = "bye";
     String path = "D:\\downloads\\MSU_project-myBranch\\MSU_project-myBranch\\src\\example.txt";
     String pathToTestFile = "D:\\downloads\\MSU_project-myBranch\\MSU_project-myBranch\\e1n.dat";
 
 
-    public static void main(String... args){
+    public static void main(String... args) {
         SampleGUI myGUI = new SampleGUI();
         myGUI.go();
     }
 
-    public void go(){
+    public void go() {
         JFrame myFrame = new JFrame();
         initializeElements();
         attachElements(myFrame);
@@ -30,48 +30,62 @@ public class SampleGUI implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent actionEvent) {
         myTextArea.setText("");
-        if (firstButton.getText()==hello)
-            firstButton.setText(love);
+        if (firstButton.getText() == hello)
+            firstButton.setText(bye);
         else
             firstButton.setText(hello);
-        myTextField.setText(Double.toString(calculate()));
+
         //FileDealer reader = new FileDealer();
         //showFile(reader.readAFile(path));
         DataDealer dataDealer = new DataDealer(pathToTestFile);
+        myTextField.setText(makeStringFromAnswer(calculate(dataDealer)));
         dataDealer.showDataInConsole();
         showData(dataDealer);
 
     }
 
-    private void showData(DataDealer dataDealer){
-        for(int i=0; i< dataDealer.getLength();i++){
-            myTextArea.append(makeStringFromData(dataDealer,i)+"\n");
+    private void showData(DataDealer dataDealer) {
+        for (int i = 0; i < dataDealer.getLength(); i++) {
+            myTextArea.append(makeStringFromData(dataDealer, i) + "\n");
         }
     }
 
-    private String makeStringFromData(DataDealer dataDealer, int index){
-        return dataDealer.getEnergyByIndex(index)+" "+dataDealer.getCrossSectionByIndex(index)+" "+dataDealer.getCrossSectionErrorByIndex(index);
+    private String makeStringFromData(DataDealer dataDealer, int index) {
+        return dataDealer.getEnergyByIndex(index) + " " + dataDealer.getCrossSectionByIndex(index) + " " + dataDealer.getCrossSectionErrorByIndex(index);
     }
 
-    public double calculate(){
-        return Math.round(Math.random()*100);
+    private String makeStringFromAnswer(double[][] answer) {
+        try {
+            return round(answer[0][0]) + " " + round(answer[0][1]) + " " + round(answer[1][0]) + " " + round(answer[1][1]);
+        } catch (Exception e) {
+            return e.getMessage();
+        }
+    }
+
+    public double[][] calculate(DataDealer data) {
+        MathDealer mathDealer = new MathDealer();
+        return mathDealer.calculateIntegrallCrossSectionAndEnergyCenter(data);
+    }
+
+    private double round(double number) {
+        long tempNumber = Math.round(number * 100);
+        return (double) tempNumber / 100;
     }
 
 
-
-    private void initializeElements(){
+    private void initializeElements() {
         myTextField = new JTextField();
         myTextArea = new JTextArea(hello);
         firstButton = new JButton(hello);
         firstButton.addActionListener(this);
     }
 
-    public void attachElements(JFrame myFrame){
+    public void attachElements(JFrame myFrame) {
         myFrame.getContentPane().add(BorderLayout.WEST, firstButton);
         myFrame.getContentPane().add(BorderLayout.SOUTH, myTextField);
-        myFrame.getContentPane().add(BorderLayout.CENTER,myTextArea);
+        myFrame.getContentPane().add(BorderLayout.CENTER, myTextArea);
         myFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        myFrame.setSize(300,300);
+        myFrame.setSize(300, 300);
         myFrame.setVisible(true);
     }
 }

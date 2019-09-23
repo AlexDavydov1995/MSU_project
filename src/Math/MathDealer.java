@@ -3,7 +3,7 @@ package Math;
 import DataDealer.DataDealer;
 
 public class MathDealer {
-    MathDealer() {
+    public MathDealer() {
 
     }
 
@@ -49,5 +49,6 @@ public class MathDealer {
     private static double pow2(double number) {
         return Math.pow(number, 2);
     }
+
 
 }
