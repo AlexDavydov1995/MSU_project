@@ -45,7 +45,43 @@ public class MathDealer {
         return answer;
     }
 
+    public DataDealer calculateTransitionalFunction (DataDealer partial, DataDealer yield) throws Exception{
+        if (partial.getLength()!=yield.getLength()) throw  new Exception("arrays have not the same length");
+        int length = partial.getLength();
 
+        double[] energy = new double[length];
+        double[] values = new double[length];
+        double[] errors = new double[length];
+
+        for (int i = 0; i < length;i++){
+                if(!checkIfEnergyMatches(partial.getEnergyByIndex(i),yield.getEnergyByIndex(i))) throw new Exception("energies dont match");
+                energy[i] = partial.getEnergyByIndex(i);
+                try{
+                    values[i] = partial.getCrossSectionByIndex(i)/yield.getCrossSectionByIndex(i);
+                }
+                catch(ArithmeticException e){
+                    System.out.println(e+"\n error in cross sections");
+                }
+                try{
+                    errors[i] = Math.sqrt(pow2(1/yield.getCrossSectionByIndex(i)*partial.getCrossSectionErrorByIndex(i))+
+                            pow2((partial.getCrossSectionByIndex(i)/pow2(yield.getCrossSectionByIndex(i)*yield.getCrossSectionErrorByIndex(i)))));
+                }
+                catch (ArithmeticException e){
+                    System.out.println(e+"\n error in cross errors");
+                }
+        }
+
+        String multiplicity = partial.getLabel().replaceAll("\\D","");
+        DataDealer transitionalFunction = new DataDealer(energy,values,errors,"F"+multiplicity);
+
+        return transitionalFunction;
+    }
+
+    private boolean checkIfEnergyMatches(double energyPartial, double energyYield){
+        double eps = 0.05;
+        if (Math.abs(energyPartial-energyYield)<=0.05) return true;
+        return false;
+    }
     private static double pow2(double number) {
         return Math.pow(number, 2);
     }

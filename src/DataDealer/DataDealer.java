@@ -7,10 +7,27 @@ public class DataDealer {
     private double[] crossSection;
     private double[] crossSectionError;
     private int length;
+    private String label;
+
+    public DataDealer(double[] energy, double[] values, double[] errors, String label){
+
+    }
+
+    private boolean checkLength(double[] energy, double[] values, double[] errors){
+        boolean res = false;
+        try{
+             res = energy.length == values.length && values.length == errors.length;
+        }
+        catch (Exception e){
+            System.out.println("Arrays dont match each other \n"+e);
+        }
+        return res;
+    }
 
     public DataDealer(String fileName) {
         FileDealer fileDealer = new FileDealer();
         String[] fileData = fileDealer.readAFile(fileName);
+        label = fileName.split("\\.")[0];
         length = fileData.length;
         energy = new double[length];
         crossSection = new double[length];
@@ -50,6 +67,10 @@ public class DataDealer {
         for (int i = 0; i < length; i++) {
             System.out.println(energy[i] + " " + crossSection[i] + " " + crossSectionError[i]);
         }
+    }
+
+    public String getLabel(){
+        return label;
     }
 
 
