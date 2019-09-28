@@ -6,14 +6,16 @@ import java.awt.*;
 import java.awt.event.*;
 
 
-public class SampleGUI implements ActionListener {
+public class SampleGUI {
     JButton firstButton;
+    JButton secondButton;
     JTextField myTextField;
     JTextArea myTextArea;
     String hello = "hello";
     String bye = "bye";
     String path = "D:\\downloads\\MSU_project-myBranch\\MSU_project-myBranch\\src\\example.txt";
     String pathToTestFile = "D:\\downloads\\MSU_project-myBranch\\MSU_project-myBranch\\e1n.dat";
+    String pathToSecondTestFile = "D:\\downloads\\MSU_project-myBranch\\MSU_project-myBranch\\eXn.dat";
 
 
     public static void main(String... args) {
@@ -25,23 +27,6 @@ public class SampleGUI implements ActionListener {
         JFrame myFrame = new JFrame();
         initializeElements();
         attachElements(myFrame);
-    }
-
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        myTextArea.setText("");
-        if (firstButton.getText() == hello)
-            firstButton.setText(bye);
-        else
-            firstButton.setText(hello);
-
-        //FileDealer reader = new FileDealer();
-        //showFile(reader.readAFile(path));
-        DataDealer dataDealer = new DataDealer(pathToTestFile);
-        myTextField.setText(makeStringFromAnswer(calculate(dataDealer)));
-        dataDealer.showDataInConsole();
-        showData(dataDealer);
-
     }
 
     private void showData(DataDealer dataDealer) {
@@ -76,8 +61,24 @@ public class SampleGUI implements ActionListener {
     private void initializeElements() {
         myTextField = new JTextField();
         myTextArea = new JTextArea(hello);
-        firstButton = new JButton(hello);
-        firstButton.addActionListener(this);
+        firstButton = new JButton( new AbstractAction("hello") {
+            public void actionPerformed(ActionEvent event){
+                myTextArea.setText("");
+                if (firstButton.getText() == hello)
+                    firstButton.setText(bye);
+                else
+                    firstButton.setText(hello);
+
+                //FileDealer reader = new FileDealer();
+                //showFile(reader.readAFile(path));
+                DataDealer dataDealer = new DataDealer(pathToTestFile);
+                myTextField.setText(makeStringFromAnswer(calculate(dataDealer)));
+                dataDealer.showDataInConsole();
+                showData(dataDealer);
+            }
+        });
+        //firstButton.addActionListener(this);
+
     }
 
     public void attachElements(JFrame myFrame) {

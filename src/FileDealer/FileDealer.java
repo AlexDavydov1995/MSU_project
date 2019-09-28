@@ -1,5 +1,7 @@
 package FileDealer;
 
+import DataDealer.DataDealer;
+
 import java.io.*;
 import java.util.ArrayList;
 
@@ -22,5 +24,22 @@ public class FileDealer {
             e.printStackTrace();
         }
         return fileContent.toArray(new String[fileContent.size()]);
+    }
+
+    public void writeAFile(String name, DataDealer data) throws IOException {
+        FileWriter fileWriter = new FileWriter(name, false);
+        try{
+            for(int i=0;i<data.getLength();i++){
+                String line = data.getEnergyByIndex(i)+"\t"
+                        +data.getCrossSectionByIndex(i)+"\t"
+                        +data.getCrossSectionErrorByIndex(i);
+                fileWriter.write(line);
+                fileWriter.append("\n");
+            }
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+        fileWriter.flush();
     }
 }
