@@ -1,4 +1,5 @@
 import DataDealer.DataDealer;
+import FileDealer.FileDealer;
 import Math.MathDealer;
 
 import javax.swing.*;
@@ -13,7 +14,7 @@ public class SampleGUI {
     JTextArea myTextArea;
     String hello = "hello";
     String bye = "bye";
-    String path = "D:\\downloads\\MSU_project-myBranch\\MSU_project-myBranch\\src\\example.txt";
+    //String path = "D:\\downloads\\MSU_project-myBranch\\MSU_project-myBranch\\src\\example.txt";
     String pathToTestFile = "D:\\downloads\\MSU_project-myBranch\\MSU_project-myBranch\\e1n.dat";
     String pathToSecondTestFile = "D:\\downloads\\MSU_project-myBranch\\MSU_project-myBranch\\eXn.dat";
 
@@ -49,7 +50,7 @@ public class SampleGUI {
 
     public double[][] calculate(DataDealer data) {
         MathDealer mathDealer = new MathDealer();
-        return mathDealer.calculateIntegrallCrossSectionAndEnergyCenter(data);
+        return mathDealer.calculateIntegralCrossSectionAndEnergyCenter(data);
     }
 
     private double round(double number) {
@@ -77,7 +78,20 @@ public class SampleGUI {
                 showData(dataDealer);
             }
         });
-        //firstButton.addActionListener(this);
+        secondButton = new JButton(new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e)  {
+                DataDealer partial = new DataDealer(pathToTestFile);
+                DataDealer yield = new DataDealer(pathToSecondTestFile);
+                try {
+                    DataDealer transitionalFunctions = MathDealer.calculateTransitionalFunction(partial,yield);
+                    FileDealer fileDealer = new FileDealer();
+                    fileDealer.writeAFile("testAnswer.txt",transitionalFunctions);
+                } catch (Exception ex) {
+                    ex.printStackTrace();
+                }
+            }
+        });
 
     }
 

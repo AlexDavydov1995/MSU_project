@@ -9,6 +9,10 @@ public class DataDealer {
     private int length;
     private String label;
 
+    public DataDealer(){
+
+    }
+
     public DataDealer(double[] energy, double[] values, double[] errors, String label){
 
     }

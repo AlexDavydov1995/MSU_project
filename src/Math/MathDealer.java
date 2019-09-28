@@ -7,7 +7,7 @@ public class MathDealer {
 
     }
 
-    public double[][] calculateIntegrallCrossSectionAndEnergyCenter(DataDealer data) {
+    public double[][] calculateIntegralCrossSectionAndEnergyCenter(DataDealer data) {
         double[][] answer = new double[2][2];
         double integralCrossSection = 0;
         double errorCrossSection = 0;
@@ -45,7 +45,7 @@ public class MathDealer {
         return answer;
     }
 
-    public DataDealer calculateTransitionalFunction(DataDealer partial, DataDealer yield) throws Exception {
+    public static DataDealer calculateTransitionalFunction(DataDealer partial, DataDealer yield) throws Exception {
         if (partial.getLength() != yield.getLength()) throw new Exception("arrays have not the same length");
         int length = partial.getLength();
 
@@ -81,7 +81,7 @@ public class MathDealer {
         return transitionalFunction;
     }
 
-    private boolean checkIfEnergyMatches(double energyPartial, double energyYield) {
+    private static boolean checkIfEnergyMatches(double energyPartial, double energyYield) {
         double eps = 0.05;
         if (Math.abs(energyPartial - energyYield) <= 0.05) return true;
         return false;
