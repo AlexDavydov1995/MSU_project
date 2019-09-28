@@ -31,6 +31,7 @@ public class SampleGUI {
     }
 
     private void showData(DataDealer dataDealer) {
+        myTextArea.setText(null);
         for (int i = 0; i < dataDealer.getLength(); i++) {
             myTextArea.append(makeStringFromData(dataDealer, i) + "\n");
         }
@@ -62,8 +63,8 @@ public class SampleGUI {
     private void initializeElements() {
         myTextField = new JTextField();
         myTextArea = new JTextArea(hello);
-        firstButton = new JButton( new AbstractAction("hello") {
-            public void actionPerformed(ActionEvent event){
+        firstButton = new JButton(new AbstractAction("hello") {
+            public void actionPerformed(ActionEvent event) {
                 myTextArea.setText("");
                 if (firstButton.getText() == hello)
                     firstButton.setText(bye);
@@ -78,18 +79,21 @@ public class SampleGUI {
                 showData(dataDealer);
             }
         });
-        secondButton = new JButton(new AbstractAction() {
+        secondButton = new JButton(new AbstractAction("write") {
             @Override
-            public void actionPerformed(ActionEvent e)  {
+            public void actionPerformed(ActionEvent e) {
                 DataDealer partial = new DataDealer(pathToTestFile);
                 DataDealer yield = new DataDealer(pathToSecondTestFile);
+
                 try {
-                    DataDealer transitionalFunctions = MathDealer.calculateTransitionalFunction(partial,yield);
+                    DataDealer transitionalFunctions = MathDealer.calculateTransitionalFunction(partial, yield);
+                    showData(transitionalFunctions);
                     FileDealer fileDealer = new FileDealer();
-                    fileDealer.writeAFile("testAnswer.txt",transitionalFunctions);
+                    fileDealer.writeAFile("testAnswer.txt", transitionalFunctions);
                 } catch (Exception ex) {
                     ex.printStackTrace();
                 }
+
             }
         });
 
@@ -97,6 +101,7 @@ public class SampleGUI {
 
     public void attachElements(JFrame myFrame) {
         myFrame.getContentPane().add(BorderLayout.WEST, firstButton);
+        myFrame.getContentPane().add(BorderLayout.EAST, secondButton);
         myFrame.getContentPane().add(BorderLayout.SOUTH, myTextField);
         myFrame.getContentPane().add(BorderLayout.CENTER, myTextArea);
         myFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

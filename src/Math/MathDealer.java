@@ -46,19 +46,23 @@ public class MathDealer {
     }
 
     public static DataDealer calculateTransitionalFunction(DataDealer partial, DataDealer yield) throws Exception {
-        if (partial.getLength() != yield.getLength()) throw new Exception("arrays have not the same length");
+        if (partial.getLength() != yield.getLength()) {
+            throw new Exception("arrays have not the same length");
+        }
         int length = partial.getLength();
-
         double[] energy = new double[length];
         double[] values = new double[length];
         double[] errors = new double[length];
 
         for (int i = 0; i < length; i++) {
-            if (!checkIfEnergyMatches(partial.getEnergyByIndex(i), yield.getEnergyByIndex(i)))
+            if (!checkIfEnergyMatches(partial.getEnergyByIndex(i), yield.getEnergyByIndex(i))) {
                 throw new Exception("energies dont match");
+            }
+
             energy[i] = partial.getEnergyByIndex(i);
             try {
                 values[i] = partial.getCrossSectionByIndex(i) / yield.getCrossSectionByIndex(i);
+
             } catch (ArithmeticException e) {
                 System.out.println(e + "\n error in cross sections");
             }
@@ -74,10 +78,8 @@ public class MathDealer {
                 }
             }
         }
-
         String multiplicity = partial.getLabel().replaceAll("\\D", "");
         DataDealer transitionalFunction = new DataDealer(energy, values, errors, "F" + multiplicity);
-
         return transitionalFunction;
     }
 

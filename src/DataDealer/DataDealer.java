@@ -9,21 +9,24 @@ public class DataDealer {
     private int length;
     private String label;
 
-    public DataDealer(){
+    public DataDealer() {
 
     }
 
-    public DataDealer(double[] energy, double[] values, double[] errors, String label){
-
+    public DataDealer(double[] energy, double[] values, double[] errors, String label) {
+        this.energy = energy;
+        this.crossSection = values;
+        this.crossSectionError = errors;
+        this.length = energy.length;
+        this.label = label;
     }
 
-    private boolean checkLength(double[] energy, double[] values, double[] errors){
+    private boolean checkLength(double[] energy, double[] values, double[] errors) {
         boolean res = false;
-        try{
-             res = energy.length == values.length && values.length == errors.length;
-        }
-        catch (Exception e){
-            System.out.println("Arrays dont match each other \n"+e);
+        try {
+            res = energy.length == values.length && values.length == errors.length;
+        } catch (Exception e) {
+            System.out.println("Arrays dont match each other \n" + e);
         }
         return res;
     }
@@ -73,7 +76,7 @@ public class DataDealer {
         }
     }
 
-    public String getLabel(){
+    public String getLabel() {
         return label;
     }
 

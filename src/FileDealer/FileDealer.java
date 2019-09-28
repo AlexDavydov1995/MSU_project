@@ -28,16 +28,17 @@ public class FileDealer {
 
     public void writeAFile(String name, DataDealer data) throws IOException {
         FileWriter fileWriter = new FileWriter(name, false);
-        try{
-            for(int i=0;i<data.getLength();i++){
-                String line = data.getEnergyByIndex(i)+"\t"
-                        +data.getCrossSectionByIndex(i)+"\t"
-                        +data.getCrossSectionErrorByIndex(i);
-                fileWriter.write(line);
+        fileWriter.write("");
+        try {
+            for (int i = 0; i < data.getLength(); i++) {
+                String line = data.getEnergyByIndex(i) + "\t"
+                        + data.getCrossSectionByIndex(i) + "\t"
+                        + data.getCrossSectionErrorByIndex(i);
+                System.out.println(line);
+                fileWriter.append(line);
                 fileWriter.append("\n");
             }
-        }
-        catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
         fileWriter.flush();
