@@ -10,10 +10,8 @@ public class MainClass {
 
     public static void go() {
         MainGUI myGui = new MainGUI();
-        //FileDealer raf = new FileDealer();
 
         myGui.go();
-        //raf.main();
 
     }
 }
