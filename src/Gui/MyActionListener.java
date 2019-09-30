@@ -1,6 +1,9 @@
 package Gui;
 
-public interface MyActionListener {
-    void changeIt();
+import java.awt.event.ActionEvent;
+import java.util.List;
+
+public interface MyActionListener  {
+    void actionPerformed(ActionEvent e) throws Exception;
 
 }

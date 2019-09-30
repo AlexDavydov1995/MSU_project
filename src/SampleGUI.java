@@ -15,8 +15,8 @@ public class SampleGUI {
     String hello = "hello";
     String bye = "bye";
     //String path = "D:\\downloads\\MSU_project-myBranch\\MSU_project-myBranch\\src\\example.txt";
-    String pathToTestFile = "D:\\downloads\\MSU_project-myBranch\\MSU_project-myBranch\\e1n.dat";
-    String pathToSecondTestFile = "D:\\downloads\\MSU_project-myBranch\\MSU_project-myBranch\\eXn.dat";
+    String pathToTestFile = "e1n.dat";
+    String pathToSecondTestFile = "eXn.dat";
 
 
     public static void main(String... args) {
@@ -38,7 +38,8 @@ public class SampleGUI {
     }
 
     private String makeStringFromData(DataDealer dataDealer, int index) {
-        return dataDealer.getEnergyByIndex(index) + " " + dataDealer.getCrossSectionByIndex(index) + " " + dataDealer.getCrossSectionErrorByIndex(index);
+        return dataDealer.getEnergyByIndex(index) + " " + dataDealer.getCrossSectionByIndex(index) +
+                " " + dataDealer.getCrossSectionErrorByIndex(index);
     }
 
     private String makeStringFromAnswer(double[][] answer) {
