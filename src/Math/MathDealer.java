@@ -7,7 +7,7 @@ public class MathDealer {
 
     }
 
-    public double[][] calculateIntegralCrossSectionAndEnergyCenter(DataDealer data) {
+    public static double[][] calculateIntegralCrossSectionAndEnergyCenter(DataDealer data) {
         double[][] answer = new double[2][2];
         double integralCrossSection = 0;
         double errorCrossSection = 0;

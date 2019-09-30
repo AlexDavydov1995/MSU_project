@@ -1,3 +1,5 @@
+import Gui.MainGUI;
+
 public class MainClass {
     public static void main(String... args) {
 
@@ -7,11 +9,9 @@ public class MainClass {
     }
 
     public static void go() {
-        SampleGUI myGui = new SampleGUI();
-        //FileDealer raf = new FileDealer();
+        MainGUI myGui = new MainGUI();
 
         myGui.go();
-        //raf.main();
 
     }
 }
