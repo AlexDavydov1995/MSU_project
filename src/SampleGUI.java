@@ -14,7 +14,6 @@ public class SampleGUI {
     JTextArea myTextArea;
     String hello = "hello";
     String bye = "bye";
-    //String path = "D:\\downloads\\MSU_project-myBranch\\MSU_project-myBranch\\src\\example.txt";
     String pathToTestFile = "e1n.dat";
     String pathToSecondTestFile = "eXn.dat";
 

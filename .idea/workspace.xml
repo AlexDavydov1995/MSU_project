@@ -2,20 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20b8bf7a-b609-4dec-b181-752a5e3cdd85" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/DataDealer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/FileDealer.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Project1/Gui/MainGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project1/Gui/MainGUI.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Project1/Gui/MyActionListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project1/Gui/MyActionListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/META-INF/Project1.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Project1/MainClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project1/MainClass.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Project1/Math/MathDealer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project1/Math/MathDealer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/ReadAFile.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Project1/SampleGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project1/SampleGUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/example.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project1/example.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/MainGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/MainGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/MyActionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/MyActionListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/buttons/ICSButton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Math/MathDealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Math/MathDealer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SampleGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SampleGUI.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,6 +38,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565564501710" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Colors" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
