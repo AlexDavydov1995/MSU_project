@@ -11,6 +11,7 @@ import java.awt.event.ActionListener;
 import Math.MathDealer;
 
 public class MainGUI {
+    JPanel buttonPanel;
     JButton ICSButton;
     JButton TFButton;
     JTextField myTextField;
@@ -19,6 +20,8 @@ public class MainGUI {
     String bye = "bye";
     String pathToTestFile = "e1n.dat";
     String pathToSecondTestFile = "eXn.dat";
+    JTextField pathToFile1;
+    JTextField pathToFile2;
 
     public void go() {
         JFrame myFrame = new JFrame();
@@ -27,27 +30,47 @@ public class MainGUI {
     }
 
     private void initializeElements() {
+
+
         myTextField = new JTextField();
         myTextArea = new JTextArea(hello);
+
+        pathToFile1 = new JTextField(hello);
+        pathToFile2 = new JTextField(hello);
+
+        buttonPanel = new JPanel(new GridLayout(1,4));
+
 
         ICSButton = new JButton("calculate ICS");
         ICSButton.addActionListener(new ICSButtonListener());
 
+
+
         TFButton = new JButton("calculate TF");
         TFButton.addActionListener(new TFButtonListener());
 
-
+        buttonPanel.add(ICSButton);
+        buttonPanel.add(TFButton);
 
     }
 
     public void attachElements(JFrame myFrame) {
-        myFrame.getContentPane().add(BorderLayout.WEST, ICSButton);
-        myFrame.getContentPane().add(BorderLayout.EAST, TFButton);
+
+        myFrame.getContentPane().add(BorderLayout.NORTH,buttonPanel);
+
+
+
+        //myFrame.getContentPane().add(BorderLayout.WEST, ICSButton);
+        //myFrame.getContentPane().add(BorderLayout.EAST, TFButton);
         myFrame.getContentPane().add(BorderLayout.SOUTH, myTextField);
         myFrame.getContentPane().add(BorderLayout.CENTER, myTextArea);
+        //myFrame.getContentPane().add(BorderLayout.NORTH,pathToFile1);
+        //myFrame.getContentPane().add(BorderLayout.NORTH,pathToFile2);
         myFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         myFrame.setSize(300, 300);
         myFrame.setVisible(true);
+
+
     }
 
     private String makeStringFromAnswer(double[][] answer) {
@@ -63,6 +86,8 @@ public class MainGUI {
         return (double) tempNumber / 100;
     }
 
+     static void addButtonsToPanel(JPanel panel) {
+    }
 
     //LISTENERS SECTION
 
@@ -86,6 +111,8 @@ public class MainGUI {
     class TFButtonListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e){
+            myTextArea.setText("");
+
             DataDealer partial = new DataDealer(pathToTestFile);
             DataDealer yield = new DataDealer(pathToSecondTestFile);
 
