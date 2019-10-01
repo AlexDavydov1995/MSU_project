@@ -14,6 +14,7 @@ public class MainGUI {
     JPanel buttonPanel;
     JButton ICSButton;
     JButton TFButton;
+    JButton OpenDialogButton;
     JTextField myTextField;
     JTextArea myTextArea;
     String hello = "hello";
@@ -40,17 +41,18 @@ public class MainGUI {
 
         buttonPanel = new JPanel(new GridLayout(1,4));
 
-
         ICSButton = new JButton("calculate ICS");
         ICSButton.addActionListener(new ICSButtonListener());
-
-
 
         TFButton = new JButton("calculate TF");
         TFButton.addActionListener(new TFButtonListener());
 
+        OpenDialogButton = new JButton("open dialog window");
+        OpenDialogButton.addActionListener(new OpenDialogButtonListener());
+
         buttonPanel.add(ICSButton);
         buttonPanel.add(TFButton);
+        buttonPanel.add(OpenDialogButton);
 
     }
 
@@ -58,18 +60,11 @@ public class MainGUI {
 
         myFrame.getContentPane().add(BorderLayout.NORTH,buttonPanel);
 
-
-
-        //myFrame.getContentPane().add(BorderLayout.WEST, ICSButton);
-        //myFrame.getContentPane().add(BorderLayout.EAST, TFButton);
         myFrame.getContentPane().add(BorderLayout.SOUTH, myTextField);
         myFrame.getContentPane().add(BorderLayout.CENTER, myTextArea);
-        //myFrame.getContentPane().add(BorderLayout.NORTH,pathToFile1);
-        //myFrame.getContentPane().add(BorderLayout.NORTH,pathToFile2);
         myFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         myFrame.setSize(300, 300);
         myFrame.setVisible(true);
-
 
     }
 
@@ -84,9 +79,6 @@ public class MainGUI {
     private double round(double number) {
         long tempNumber = Math.round(number * 100);
         return (double) tempNumber / 100;
-    }
-
-     static void addButtonsToPanel(JPanel panel) {
     }
 
     //LISTENERS SECTION
@@ -123,6 +115,16 @@ public class MainGUI {
             } catch (Exception ex) {
                 ex.printStackTrace();
             }
+        }
+    }
+    class OpenDialogButtonListener implements ActionListener{
+        @Override
+        public void actionPerformed(ActionEvent e){
+            Thread myThread = new Thread();
+            System.out.println("i am in new thread "+myThread.getState().toString());
+            myThread.interrupt();
+            System.out.println(myThread.getState());
+
         }
     }
 
