@@ -9,12 +9,6 @@ public class MyRunnable implements Runnable{
     }
 
     private void go(){
-        JFrame dialogFrame = new JFrame();
-        dialogFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        dialogFrame.setVisible(true);
 
-        JButton tempButton = new JButton("hello");
-
-        dialogFrame.add(tempButton);
     }
 }

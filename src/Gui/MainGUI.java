@@ -121,10 +121,14 @@ public class MainGUI {
     class OpenDialogButtonListener implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e){
-            Runnable threadJob = new MyRunnable();
-            Thread myThread = new Thread(threadJob);
-            myThread.start();
+            JFrame dialogFrame = new JFrame();
+            dialogFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+            dialogFrame.setSize(200,200);
+            dialogFrame.setVisible(true);
 
+            JButton tempButton = new JButton("hello");
+
+            dialogFrame.getContentPane().add(tempButton);
         }
     }
 
