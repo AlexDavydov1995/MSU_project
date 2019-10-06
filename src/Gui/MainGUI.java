@@ -8,6 +8,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import Gui.interfaces.MyRunnable;
 import Math.MathDealer;
 
 public class MainGUI {
@@ -120,11 +121,14 @@ public class MainGUI {
     class OpenDialogButtonListener implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e){
-            Thread myThread = new Thread();
-            System.out.println("i am in new thread "+myThread.getState().toString());
-            myThread.interrupt();
-            System.out.println(myThread.getState());
+            JFrame dialogFrame = new JFrame();
+            dialogFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+            dialogFrame.setSize(200,200);
+            dialogFrame.setVisible(true);
 
+            JButton tempButton = new JButton("hello");
+
+            dialogFrame.getContentPane().add(tempButton);
         }
     }
 
