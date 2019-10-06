@@ -11,14 +11,18 @@ import java.awt.event.ActionListener;
 import Math.MathDealer;
 
 public class MainGUI {
+    JPanel buttonPanel;
     JButton ICSButton;
     JButton TFButton;
+    JButton OpenDialogButton;
     JTextField myTextField;
     JTextArea myTextArea;
     String hello = "hello";
     String bye = "bye";
     String pathToTestFile = "e1n.dat";
     String pathToSecondTestFile = "eXn.dat";
+    JTextField pathToFile1;
+    JTextField pathToFile2;
 
     public void go() {
         JFrame myFrame = new JFrame();
@@ -27,8 +31,15 @@ public class MainGUI {
     }
 
     private void initializeElements() {
+
+
         myTextField = new JTextField();
         myTextArea = new JTextArea(hello);
+
+        pathToFile1 = new JTextField(hello);
+        pathToFile2 = new JTextField(hello);
+
+        buttonPanel = new JPanel(new GridLayout(1,4));
 
         ICSButton = new JButton("calculate ICS");
         ICSButton.addActionListener(new ICSButtonListener());
@@ -36,18 +47,25 @@ public class MainGUI {
         TFButton = new JButton("calculate TF");
         TFButton.addActionListener(new TFButtonListener());
 
+        OpenDialogButton = new JButton("open dialog window");
+        OpenDialogButton.addActionListener(new OpenDialogButtonListener());
 
+        buttonPanel.add(ICSButton);
+        buttonPanel.add(TFButton);
+        buttonPanel.add(OpenDialogButton);
 
     }
 
     public void attachElements(JFrame myFrame) {
-        myFrame.getContentPane().add(BorderLayout.WEST, ICSButton);
-        myFrame.getContentPane().add(BorderLayout.EAST, TFButton);
+
+        myFrame.getContentPane().add(BorderLayout.NORTH,buttonPanel);
+
         myFrame.getContentPane().add(BorderLayout.SOUTH, myTextField);
         myFrame.getContentPane().add(BorderLayout.CENTER, myTextArea);
         myFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         myFrame.setSize(300, 300);
         myFrame.setVisible(true);
+
     }
 
     private String makeStringFromAnswer(double[][] answer) {
@@ -62,7 +80,6 @@ public class MainGUI {
         long tempNumber = Math.round(number * 100);
         return (double) tempNumber / 100;
     }
-
 
     //LISTENERS SECTION
 
@@ -86,6 +103,8 @@ public class MainGUI {
     class TFButtonListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e){
+            myTextArea.setText("");
+
             DataDealer partial = new DataDealer(pathToTestFile);
             DataDealer yield = new DataDealer(pathToSecondTestFile);
 
@@ -96,6 +115,16 @@ public class MainGUI {
             } catch (Exception ex) {
                 ex.printStackTrace();
             }
+        }
+    }
+    class OpenDialogButtonListener implements ActionListener{
+        @Override
+        public void actionPerformed(ActionEvent e){
+            Thread myThread = new Thread();
+            System.out.println("i am in new thread "+myThread.getState().toString());
+            myThread.interrupt();
+            System.out.println(myThread.getState());
+
         }
     }
 
