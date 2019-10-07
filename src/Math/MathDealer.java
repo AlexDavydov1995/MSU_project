@@ -46,9 +46,7 @@ public class MathDealer {
     }
 
     public static DataDealer calculateTransitionalFunction(DataDealer partial, DataDealer yield) throws Exception {
-        if (partial.getLength() != yield.getLength()) {
-            throw new Exception("arrays have not the same length");
-        }
+        checkLength(partial, yield);
         int length = partial.getLength();
         double[] energy = new double[length];
         double[] values = new double[length];
@@ -83,6 +81,39 @@ public class MathDealer {
         return transitionalFunction;
     }
 
+    public static DataDealer calculateEvaluatedCrossSections(DataDealer tf, DataDealer yield) throws Exception {
+        checkLength(tf, yield);
+        int length = tf.getLength();
+        double[] energy = new double[length];
+        double[] values = new double[length];
+        double[] errors = new double[length];
+        for (int i = 0; i < length; i++) {
+            if (!checkIfEnergyMatches(tf.getEnergyByIndex(i), yield.getEnergyByIndex(i))) {
+                throw new Exception("energies dont match");
+            }
+            energy[i] = tf.getEnergyByIndex(i);
+            values[i] = tf.getCrossSectionByIndex(i) * yield.getCrossSectionByIndex(i);
+            errors[i] = Math.sqrt(pow2(yield.getCrossSectionByIndex(i) * tf.getCrossSectionErrorByIndex(i)) + pow2(tf.getCrossSectionByIndex(i) * yield.getCrossSectionErrorByIndex(i)));
+        }
+        String multiplicity = tf.getLabel().replaceAll("\\D", "");
+        DataDealer evaluation = new DataDealer(energy, values, errors, "Eval" + multiplicity);
+        return evaluation;
+    }
+
+    public static DataDealer correct(DataDealer data, double energyCorrection, double crossSectionCorrection) {
+        int length = data.getLength();
+        double[] energy = new double[length];
+        double[] values = new double[length];
+        double[] errors = new double[length];
+        for (int i = 0; i < length; i++) {
+            energy[i] = data.getEnergyByIndex(i) - energyCorrection;
+            values[i] = data.getCrossSectionByIndex(i) * crossSectionCorrection;
+            errors[i] = data.getCrossSectionErrorByIndex(i) * crossSectionCorrection;
+        }
+        DataDealer correction = new DataDealer(energy, values, errors, "Cor" + data.getLabel());
+        return correction;
+    }
+
     private static boolean checkIfEnergyMatches(double energyPartial, double energyYield) {
         double eps = 0.05;
         if (Math.abs(energyPartial - energyYield) <= 0.05) return true;
@@ -93,5 +124,9 @@ public class MathDealer {
         return Math.pow(number, 2);
     }
 
-
+    private static void checkLength(DataDealer data1, DataDealer data2) throws Exception {
+        if (data1.getLength() != data2.getLength()) {
+            throw new Exception("arrays have not the same length");
+        }
+    }
 }
