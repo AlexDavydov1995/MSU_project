@@ -8,15 +8,24 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import Gui.interfaces.MyRunnable;
+import Gui.Buttons.*;
+
 import Math.MathDealer;
 
 public class MainGUI {
     JPanel buttonPanel;
-    JButton ICSButton;
-    JButton TFButton;
-    JButton OpenDialogButton;
+
+
+    ICSButton ICSButton;
+    TFButton TFButton;
+    CorrectButton correctButton;
+    EvaluateButton evaluateButton;
+    SumButton sumButton;
+
+
+    JButton openDialogButton;
     JTextField myTextField;
+
     JTextArea myTextArea;
     String hello = "hello";
     String bye = "bye";
@@ -42,18 +51,18 @@ public class MainGUI {
 
         buttonPanel = new JPanel(new GridLayout(1,4));
 
-        ICSButton = new JButton("calculate ICS");
+        ICSButton = new ICSButton("calculate ICS");
         ICSButton.addActionListener(new ICSButtonListener());
 
-        TFButton = new JButton("calculate TF");
+        TFButton = new TFButton("calculate TF");
         TFButton.addActionListener(new TFButtonListener());
 
-        OpenDialogButton = new JButton("open dialog window");
-        OpenDialogButton.addActionListener(new OpenDialogButtonListener());
+        openDialogButton = new JButton("open dialog window");
+        openDialogButton.addActionListener(new OpenDialogButtonListener());
 
         buttonPanel.add(ICSButton);
         buttonPanel.add(TFButton);
-        buttonPanel.add(OpenDialogButton);
+        buttonPanel.add(openDialogButton);
 
     }
 
