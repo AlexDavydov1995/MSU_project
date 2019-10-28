@@ -6,6 +6,10 @@ import java.awt.event.ActionListener;
 
 public class CorrectButton extends JButton implements ActionListener {
 
+    public CorrectButton(String name){
+        super(name);
+    }
+
     public void actionPerformed(ActionEvent e){
 
     }

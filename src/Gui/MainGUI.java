@@ -49,7 +49,7 @@ public class MainGUI {
         pathToFile1 = new JTextField(hello);
         pathToFile2 = new JTextField(hello);
 
-        buttonPanel = new JPanel(new GridLayout(1,4));
+        buttonPanel = new JPanel(new GridLayout(6,1));
 
         ICSButton = new ICSButton("calculate ICS");
         ICSButton.addActionListener(new ICSButtonListener());
@@ -60,15 +60,24 @@ public class MainGUI {
         openDialogButton = new JButton("open dialog window");
         openDialogButton.addActionListener(new OpenDialogButtonListener());
 
+        correctButton = new CorrectButton("correct button");
+
+        evaluateButton = new EvaluateButton("evaluate button");
+
+        sumButton = new SumButton("sum button");
+
         buttonPanel.add(ICSButton);
         buttonPanel.add(TFButton);
+        buttonPanel.add(correctButton);
+        buttonPanel.add(evaluateButton);
+        buttonPanel.add(sumButton);
         buttonPanel.add(openDialogButton);
 
     }
 
     public void attachElements(JFrame myFrame) {
 
-        myFrame.getContentPane().add(BorderLayout.NORTH,buttonPanel);
+        myFrame.getContentPane().add(BorderLayout.EAST,buttonPanel);
 
         myFrame.getContentPane().add(BorderLayout.SOUTH, myTextField);
         myFrame.getContentPane().add(BorderLayout.CENTER, myTextArea);

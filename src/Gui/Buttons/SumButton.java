@@ -6,7 +6,9 @@ import java.awt.event.ActionListener;
 
 public class SumButton extends JButton implements ActionListener {
 
-    String label = "SumButton";
+    public SumButton(String name){
+        super(name);
+    }
 
     public void actionPerformed(ActionEvent e){
 
