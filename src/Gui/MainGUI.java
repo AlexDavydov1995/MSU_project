@@ -52,10 +52,11 @@ public class MainGUI {
         buttonPanel = new JPanel(new GridLayout(6,1));
 
         ICSButton = new ICSButton("calculate ICS");
-        ICSButton.addActionListener(new ICSButtonListener());
+        ICSButton.addActionListener(ICSButton);
 
         TFButton = new TFButton("calculate TF");
         TFButton.addActionListener(new TFButtonListener());
+
 
         openDialogButton = new JButton("open dialog window");
         openDialogButton.addActionListener(new OpenDialogButtonListener());
@@ -101,7 +102,7 @@ public class MainGUI {
     }
 
     //LISTENERS SECTION
-
+/*
     class ICSButtonListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e){
@@ -119,6 +120,8 @@ public class MainGUI {
             //showData(dataDealer);
         }
     }
+
+ */
     class TFButtonListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e){
