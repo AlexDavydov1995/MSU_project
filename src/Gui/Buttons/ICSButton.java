@@ -21,7 +21,7 @@ public class ICSButton extends JButton implements ActionListener {
         JPanel gridPanel = new JPanel(new GridLayout(4,1));
         JPanel fieldsPanel = new JPanel(new GridLayout(2,1));
         dialogFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        dialogFrame.setSize(300,100);
+        dialogFrame.setSize(400,100);
         dialogFrame.setVisible(true);
 
         JLabel labelOfTextField = new JLabel("Path to file: ");

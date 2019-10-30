@@ -55,7 +55,7 @@ public class MainGUI {
         ICSButton.addActionListener(ICSButton);
 
         TFButton = new TFButton("calculate TF");
-        TFButton.addActionListener(new TFButtonListener());
+        TFButton.addActionListener(TFButton);
 
 
         openDialogButton = new JButton("open dialog window");
@@ -125,7 +125,7 @@ public class MainGUI {
     class TFButtonListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e){
-            myTextArea.setText("");
+            //myTextArea.setText("");
 
             DataDealer partial = new DataDealer(pathToTestFile);
             DataDealer yield = new DataDealer(pathToSecondTestFile);
