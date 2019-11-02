@@ -43,12 +43,9 @@ public class Trio extends JPanel {
                 String filePath = fileChooser.getSelectedFile().getAbsolutePath();
 
                 text.setText(filePath);
-            }
-            else{
+            } else {
                 text.setText("incorrect file");
             }
         }
     }
-
-
 }

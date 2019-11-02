@@ -2,6 +2,7 @@ package Gui.Buttons;
 
 import DataDealer.DataDealer;
 import FileDealer.FileDealer;
+import Gui.Trio;
 import Math.MathDealer;
 
 import javax.swing.*;
@@ -18,28 +19,26 @@ public class TFButton extends JButton implements ActionListener {
 
     public void actionPerformed(ActionEvent e){
         JFrame dialogFrame = new JFrame();
-        JPanel gridPanel = new JPanel(new GridLayout(6,1));
-        JPanel fieldsPanel = new JPanel(new GridLayout(3,1));
+        JPanel gridPanel = new JPanel(new GridLayout(3,1));
+
         dialogFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         dialogFrame.setSize(400,150);
-        dialogFrame.setVisible(true);
 
-        JLabel pathToPartial = new JLabel("enter path to partial here");
-        JTextField pathToPartialTextField = new JTextField("e1n.dat");
-        JButton browsePartialPath = new JButton("Browse");
+        Trio partialTrio = new Trio("enter path to partial here","e1n.dat","Browse");
 
-        JLabel pathToYield = new JLabel("enter path to yield here");
-        JTextField pathToYieldTextField = new JTextField("eXn.dat");
-        JButton browseYieldPath = new JButton("Browse");
+        Trio yieldTrio = new Trio("enter path to yield here","eXn.dat","Browse");
 
+
+        JPanel calculatePanel = new JPanel(new BorderLayout());
+        JPanel leftPanel = new JPanel(new GridLayout(2,1));
         JLabel pathToTF = new JLabel("here is your TF");
         JTextField pathToTFTextField = new JTextField("");
         JButton calculateButton = new JButton("calculate");
         calculateButton.addActionListener(actionEvent -> {
 
             pathToTFTextField.setText("");
-            DataDealer partial = new DataDealer(pathToPartialTextField.getText());
-            DataDealer yield = new DataDealer(pathToYieldTextField.getText());
+            DataDealer partial = new DataDealer(partialTrio.getFilePath());
+            DataDealer yield = new DataDealer(yieldTrio.getFilePath());
 
             try {
                 DataDealer transitionalFunctions = MathDealer.calculateTransitionalFunction(partial, yield);
@@ -51,23 +50,18 @@ public class TFButton extends JButton implements ActionListener {
                 ex.printStackTrace();
             }
         });
+        leftPanel.add(pathToTF);
+        leftPanel.add(calculateButton);
+        calculatePanel.add(BorderLayout.WEST,leftPanel);
+        calculatePanel.add(pathToTFTextField);
 
-        gridPanel.add(pathToPartial);
-        gridPanel.add(browsePartialPath);
-        gridPanel.add(pathToYield);
-        gridPanel.add(browseYieldPath);
-        gridPanel.add(pathToTF);
-        gridPanel.add(calculateButton);
+        gridPanel.add(partialTrio);
+        gridPanel.add(yieldTrio);
+        gridPanel.add(calculatePanel);
 
-        fieldsPanel.add(pathToPartialTextField);
-        fieldsPanel.add(pathToYieldTextField);
-        fieldsPanel.add(pathToTFTextField);
+        dialogFrame.getContentPane().add(gridPanel);
 
-        dialogFrame.getContentPane().add(BorderLayout.WEST,gridPanel);
-        dialogFrame.getContentPane().add(fieldsPanel);
-
-
-
+        dialogFrame.setVisible(true);
 
     }
 }

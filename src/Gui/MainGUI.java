@@ -2,15 +2,13 @@ package Gui;
 
 import DataDealer.DataDealer;
 import FileDealer.FileDealer;
+import Gui.Buttons.*;
+import Math.MathDealer;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
-import Gui.Buttons.*;
-
-import Math.MathDealer;
 
 public class MainGUI {
     JPanel buttonPanel;
@@ -46,7 +44,7 @@ public class MainGUI {
         pathToFile1 = new JTextField(hello);
         pathToFile2 = new JTextField(hello);
 
-        buttonPanel = new JPanel(new GridLayout(6,1));
+        buttonPanel = new JPanel(new GridLayout(6, 1));
 
         ICSButton = new ICSButton("calculate ICS");
         ICSButton.addActionListener(ICSButton);
@@ -75,7 +73,7 @@ public class MainGUI {
 
     public void attachElements(JFrame myFrame) {
 
-        myFrame.getContentPane().add(BorderLayout.EAST,buttonPanel);
+        myFrame.getContentPane().add(BorderLayout.EAST, buttonPanel);
 
         myFrame.getContentPane().add(BorderLayout.SOUTH, myTextField);
         myFrame.getContentPane().add(BorderLayout.CENTER, myTextArea);
@@ -121,7 +119,7 @@ public class MainGUI {
  */
     class TFButtonListener implements ActionListener {
         @Override
-        public void actionPerformed(ActionEvent e){
+        public void actionPerformed(ActionEvent e) {
 
             DataDealer partial = new DataDealer(pathToTestFile);
             DataDealer yield = new DataDealer(pathToSecondTestFile);
@@ -135,12 +133,13 @@ public class MainGUI {
             }
         }
     }
-    class OpenDialogButtonListener implements ActionListener{
+
+    class OpenDialogButtonListener implements ActionListener {
         @Override
-        public void actionPerformed(ActionEvent e){
+        public void actionPerformed(ActionEvent e) {
             JFrame dialogFrame = new JFrame();
             dialogFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-            dialogFrame.setSize(200,200);
+            dialogFrame.setSize(200, 200);
             dialogFrame.setVisible(true);
 
             JButton tempButton = new JButton("hello");
