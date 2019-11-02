@@ -3,9 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="20b8bf7a-b609-4dec-b181-752a5e3cdd85" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/F1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/F1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/Gui/Buttons/ICSButton$DoubleArrayToStringConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project1/Gui/Buttons/ICSButton$DoubleArrayToStringConverter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/Gui/Buttons/ICSButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project1/Gui/Buttons/ICSButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/Gui/MainGUI$OpenDialogButtonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project1/Gui/MainGUI$OpenDialogButtonListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/Gui/MainGUI$TFButtonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project1/Gui/MainGUI$TFButtonListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/Gui/MainGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project1/Gui/MainGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/Gui/interfaces/MyRunnable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/SampleGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/SampleGUI$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/SampleGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project1/SampleGUI.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/Buttons/ICSButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Buttons/ICSButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Buttons/TFButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Buttons/TFButton.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/MainGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/MainGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/interfaces/MyRunnable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SampleGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SampleGUI.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,9 +24,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -23,12 +38,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
   <component name="ProjectId" id="1RZLZjJKW5RgNOSRT10qxgdvGj4" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565564501710" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Colors" />
@@ -91,8 +111,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1564518841322</updated>
+      <workItem from="1572638706459" duration="5347000" />
+      <workItem from="1572680665631" duration="1005000" />
+      <workItem from="1572716175865" duration="14189000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

@@ -15,20 +15,17 @@ import Math.MathDealer;
 public class MainGUI {
     JPanel buttonPanel;
 
-
     ICSButton ICSButton;
     TFButton TFButton;
     CorrectButton correctButton;
     EvaluateButton evaluateButton;
     SumButton sumButton;
 
-
     JButton openDialogButton;
     JTextField myTextField;
 
     JTextArea myTextArea;
     String hello = "hello";
-    String bye = "bye";
     String pathToTestFile = "e1n.dat";
     String pathToSecondTestFile = "eXn.dat";
     JTextField pathToFile1;
@@ -125,7 +122,6 @@ public class MainGUI {
     class TFButtonListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e){
-            //myTextArea.setText("");
 
             DataDealer partial = new DataDealer(pathToTestFile);
             DataDealer yield = new DataDealer(pathToSecondTestFile);

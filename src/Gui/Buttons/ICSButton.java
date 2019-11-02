@@ -1,6 +1,7 @@
 package Gui.Buttons;
 
 import DataDealer.DataDealer;
+import Gui.Trio;
 import Math.MathDealer;
 import Math.QuickMath;
 
@@ -18,35 +19,32 @@ public class ICSButton extends JButton implements ActionListener {
     public void actionPerformed(ActionEvent e){
 
         JFrame dialogFrame = new JFrame();
-        JPanel gridPanel = new JPanel(new GridLayout(4,1));
-        JPanel fieldsPanel = new JPanel(new GridLayout(2,1));
+        JPanel gridPanel = new JPanel(new GridLayout(2,1));
+        JPanel calculatePanel = new JPanel(new BorderLayout());
         dialogFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        dialogFrame.setSize(400,100);
+        dialogFrame.setSize(300,150);
         dialogFrame.setVisible(true);
 
-        JLabel labelOfTextField = new JLabel("Path to file: ");
-       JTextField pathTextField = new JTextField("e1n.dat");
-       JButton browseButton = new JButton("Browse!!!");
 
+        JPanel calculateLeftPanel = new JPanel(new GridLayout(2,1));
        JLabel labelOfAnswerField = new JLabel("Answer: ");
        JTextField answerTextField = new JTextField("answer field");
        answerTextField.setEditable(false);
        JButton submitButton = new JButton("Calculate!!!");
+       calculateLeftPanel.add(labelOfAnswerField);
+       calculateLeftPanel.add(submitButton);
+       calculatePanel.add(BorderLayout.WEST,calculateLeftPanel);
+       calculatePanel.add(answerTextField);
 
-        gridPanel.add(labelOfTextField);
-        gridPanel.add(browseButton);
-        gridPanel.add(labelOfAnswerField);
-        gridPanel.add(submitButton);
+        Trio browseComponent = new Trio("Choose file","e1n.dat","Browse!!!");
 
+        gridPanel.add(browseComponent);
+        gridPanel.add(calculatePanel);
 
-       dialogFrame.getContentPane().add(BorderLayout.WEST,gridPanel);
+       dialogFrame.getContentPane().add(gridPanel);
 
-
-       fieldsPanel.add(pathTextField);
-       fieldsPanel.add(answerTextField);
-       dialogFrame.getContentPane().add(fieldsPanel);
        submitButton.addActionListener( actionEvent -> {
-           String path = pathTextField.getText();
+          String path = browseComponent.getFilePath();
            DataDealer data = new DataDealer(path);
            double[][] answer = MathDealer.calculateIntegralCrossSectionAndEnergyCenter(data);
 
