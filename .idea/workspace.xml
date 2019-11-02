@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="20b8bf7a-b609-4dec-b181-752a5e3cdd85" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/F1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/F1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/Gui/Buttons/ICSButton$DoubleArrayToStringConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project1/Gui/Buttons/ICSButton$DoubleArrayToStringConverter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/Gui/Buttons/ICSButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project1/Gui/Buttons/ICSButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/Gui/MainGUI$OpenDialogButtonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project1/Gui/MainGUI$OpenDialogButtonListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/Gui/MainGUI$TFButtonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project1/Gui/MainGUI$TFButtonListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/Gui/MainGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project1/Gui/MainGUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/Gui/interfaces/MyRunnable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/SampleGUI$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/SampleGUI$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/SampleGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project1/SampleGUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Buttons/ICSButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Buttons/ICSButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/MainGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/MainGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/interfaces/MyRunnable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SampleGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SampleGUI.java" afterDir="false" />
-    </list>
+    <list default="true" id="20b8bf7a-b609-4dec-b181-752a5e3cdd85" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
