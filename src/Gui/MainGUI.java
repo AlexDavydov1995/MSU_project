@@ -57,6 +57,7 @@ public class MainGUI {
         openDialogButton.addActionListener(new OpenDialogButtonListener());
 
         correctButton = new CorrectButton("correct button");
+        correctButton.addActionListener(correctButton);
 
         evaluateButton = new EvaluateButton("evaluate button");
 

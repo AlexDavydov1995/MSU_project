@@ -33,6 +33,7 @@ public class TFButton extends JButton implements ActionListener {
         JPanel leftPanel = new JPanel(new GridLayout(2,1));
         JLabel pathToTF = new JLabel("here is your TF");
         JTextField pathToTFTextField = new JTextField("");
+        pathToTFTextField.setEditable(false);
         JButton calculateButton = new JButton("calculate");
         calculateButton.addActionListener(actionEvent -> {
 
