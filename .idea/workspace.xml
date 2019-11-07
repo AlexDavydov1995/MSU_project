@@ -2,10 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20b8bf7a-b609-4dec-b181-752a5e3cdd85" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Buttons/CorrectButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Buttons/CorrectButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Buttons/TFButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Buttons/TFButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/MainGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/MainGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Project1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/DataDealer/DataDealer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/FileDealer/FileDealer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/Gui/Buttons/CorrectButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/Gui/Buttons/EvaluateButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/Gui/Buttons/ICSButton$DoubleArrayToStringConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/Gui/Buttons/ICSButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/Gui/Buttons/SumButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/Gui/Buttons/TFButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/Gui/MainGUI$OpenDialogButtonListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/Gui/MainGUI$TFButtonListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/Gui/MainGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/Gui/Trio$BrowseButtonListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/Gui/Trio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/MainClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/Math/MathDealer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/Math/QuickMath.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/SampleGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataDealer/DataDealer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileDealer/FileDealer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Buttons/CorrectButton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Buttons/EvaluateButton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Buttons/ICSButton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Buttons/SumButton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Buttons/TFButton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/MainGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Trio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Math/MathDealer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Math/QuickMath.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SampleGUI.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,8 +68,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565564501710" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Colors" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -146,7 +178,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Gui/interfaces/MyRunnable.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/Gui/interfaces/MyRunnable.java</url>
           <line>12</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
