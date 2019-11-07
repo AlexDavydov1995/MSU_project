@@ -1,41 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="20b8bf7a-b609-4dec-b181-752a5e3cdd85" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Project1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/DataDealer/DataDealer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/FileDealer/FileDealer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/Gui/Buttons/CorrectButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/Gui/Buttons/EvaluateButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/Gui/Buttons/ICSButton$DoubleArrayToStringConverter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/Gui/Buttons/ICSButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/Gui/Buttons/SumButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/Gui/Buttons/TFButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/Gui/MainGUI$OpenDialogButtonListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/Gui/MainGUI$TFButtonListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/Gui/MainGUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/Gui/Trio$BrowseButtonListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/Gui/Trio.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/MainClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/Math/MathDealer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/Math/QuickMath.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/SampleGUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataDealer/DataDealer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileDealer/FileDealer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Buttons/CorrectButton.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Buttons/EvaluateButton.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Buttons/ICSButton.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Buttons/SumButton.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Buttons/TFButton.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/MainGUI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Trio.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Math/MathDealer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Math/QuickMath.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SampleGUI.java" beforeDir="false" />
-    </list>
+    <list default="true" id="20b8bf7a-b609-4dec-b181-752a5e3cdd85" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,0 +1,17 @@
+FileDealer/FileDealer.class
+Gui/MainGUI.class
+Math/MathDealer.class
+Gui/MainGUI$TFButtonListener.class
+Gui/Trio.class
+Gui/Buttons/TFButton.class
+Gui/Buttons/EvaluateButton.class
+Gui/Buttons/CorrectButton.class
+Gui/Trio$BrowseButtonListener.class
+MainClass.class
+Gui/Buttons/SumButton.class
+Gui/Buttons/ICSButton.class
+DataDealer/DataDealer.class
+Math/QuickMath.class
+SampleGUI.class
+Gui/Buttons/ICSButton$DoubleArrayToStringConverter.class
+Gui/MainGUI$OpenDialogButtonListener.class
