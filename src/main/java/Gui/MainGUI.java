@@ -62,6 +62,7 @@ public class MainGUI {
         evaluateButton = new EvaluateButton("evaluate button");
 
         sumButton = new SumButton("sum button");
+        sumButton.addActionListener(sumButton);
 
         buttonPanel.add(ICSButton);
         buttonPanel.add(TFButton);

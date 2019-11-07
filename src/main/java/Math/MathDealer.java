@@ -114,6 +114,10 @@ public class MathDealer {
         return correction;
     }
 
+    public static DataDealer sum(DataDealer first, DataDealer second){
+        return null;
+    }
+
     private static boolean checkIfEnergyMatches(double energyPartial, double energyYield) {
         double eps = 0.05;
         if (Math.abs(energyPartial - energyYield) <= 0.05) return true;
