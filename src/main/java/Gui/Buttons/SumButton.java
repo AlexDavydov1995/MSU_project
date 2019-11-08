@@ -1,6 +1,7 @@
 package Gui.Buttons;
 
 import DataDealer.DataDealer;
+import FileDealer.FileDealer;
 import Math.MathDealer;
 import Gui.Trio;
 
@@ -32,15 +33,24 @@ public class SumButton extends JButton implements ActionListener {
         JLabel sumLabel = new JLabel("sum file: ");
         JButton sumButton = new JButton("Calc");
 
+        JTextField sumTextField = new JTextField("");
+        sumTextField.setEditable(false);
+
         sumButton.addActionListener(ActionListener -> {
             DataDealer firstData = new DataDealer(firstFile.getFilePath());
             DataDealer secondData = new DataDealer(secondFile.getFilePath());
             DataDealer sumData = MathDealer.sum(firstData,secondData);
-
+            try {
+                FileDealer fileDealer = new FileDealer();
+                String path = sumData.getLabel() + ".txt";
+                fileDealer.writeAFile(path, sumData);
+                sumTextField.setText(path);
+            }
+            catch (Exception ex){
+                ex.printStackTrace();
+            }
         });
 
-        JTextField sumTextField = new JTextField("");
-        sumTextField.setEditable(false);
 
 
 

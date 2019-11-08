@@ -4,12 +4,7 @@
     <list default="true" id="20b8bf7a-b609-4dec-b181-752a5e3cdd85" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Gui/Buttons/SumButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/Buttons/SumButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/MainGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/MainGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Math/MathDealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Math/MathDealer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Gui/Buttons/SumButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/Buttons/SumButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Gui/MainGUI$OpenDialogButtonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/MainGUI$OpenDialogButtonListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Gui/MainGUI$TFButtonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/MainGUI$TFButtonListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Gui/MainGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/MainGUI.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
