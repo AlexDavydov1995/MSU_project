@@ -1,8 +1,8 @@
 FileDealer/FileDealer.class
 Gui/MainGUI.class
 Math/MathDealer.class
-Gui/MainGUI$TFButtonListener.class
 Gui/Trio.class
+vars/GlobalVariables.class
 Gui/Buttons/TFButton.class
 Gui/Buttons/EvaluateButton.class
 Gui/Buttons/CorrectButton.class

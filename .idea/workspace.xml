@@ -3,8 +3,33 @@
   <component name="ChangeListManager">
     <list default="true" id="20b8bf7a-b609-4dec-b181-752a5e3cdd85" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/Buttons/SumButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/Buttons/SumButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Math/MathDealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Math/MathDealer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/MainGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/MainGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/Trio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/Trio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SampleGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SampleGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Project1-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DataDealer/DataDealer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FileDealer/FileDealer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/Buttons/CorrectButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/Buttons/EvaluateButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/Buttons/ICSButton$DoubleArrayToStringConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/Buttons/ICSButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/Buttons/SumButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/Buttons/TFButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/MainGUI$OpenDialogButtonListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/MainGUI$TFButtonListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/MainGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/Trio$BrowseButtonListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/Trio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Project1.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Math/MathDealer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Math/QuickMath.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SampleGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +68,11 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="vars" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">

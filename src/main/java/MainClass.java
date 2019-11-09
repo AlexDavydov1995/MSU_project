@@ -5,7 +5,6 @@ public class MainClass {
 
         go();
 
-
     }
 
     public static void go() {

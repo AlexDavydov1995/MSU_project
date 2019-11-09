@@ -3,7 +3,6 @@ import Gui.Trio;
 import javax.swing.*;
 import java.awt.*;
 
-
 public class SampleGUI {
 
 

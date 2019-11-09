@@ -99,43 +99,6 @@ public class MainGUI {
     }
 
     //LISTENERS SECTION
-/*
-    class ICSButtonListener implements ActionListener {
-        @Override
-        public void actionPerformed(ActionEvent e){
-            myTextArea.setText("");
-            if (ICSButton.getText() == hello)
-                ICSButton.setText(bye);
-            else
-                ICSButton.setText(hello);
-
-            //FileDealer reader = new FileDealer();
-            //showFile(reader.readAFile(path));
-            DataDealer dataDealer = new DataDealer(pathToTestFile);
-            myTextField.setText(makeStringFromAnswer(MathDealer.calculateIntegralCrossSectionAndEnergyCenter(dataDealer)));
-            dataDealer.showDataInConsole();
-            //showData(dataDealer);
-        }
-    }
-
- */
-    class TFButtonListener implements ActionListener {
-        @Override
-        public void actionPerformed(ActionEvent e) {
-
-            DataDealer partial = new DataDealer(pathToTestFile);
-            DataDealer yield = new DataDealer(pathToSecondTestFile);
-
-            try {
-                DataDealer transitionalFunctions = MathDealer.calculateTransitionalFunction(partial, yield);
-                FileDealer fileDealer = new FileDealer();
-                fileDealer.writeAFile("testAnswer.txt", transitionalFunctions);
-            } catch (Exception ex) {
-                ex.printStackTrace();
-            }
-        }
-    }
-
     class OpenDialogButtonListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
