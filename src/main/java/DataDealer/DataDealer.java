@@ -2,6 +2,8 @@ package DataDealer;
 
 import FileDealer.FileDealer;
 
+import java.util.Arrays;
+
 public class DataDealer {
     private double[] energy;
     private double[] crossSection;
@@ -70,6 +72,18 @@ public class DataDealer {
         return crossSectionError[index];
     }
 
+    public double[] getEnergy() {
+        return energy;
+    }
+
+    public double[] getCrossSection() {
+        return crossSection;
+    }
+
+    public double[] getCrossSectionError() {
+        return crossSectionError;
+    }
+
     public void showDataInConsole() {
         for (int i = 0; i < length; i++) {
             System.out.println(energy[i] + " " + crossSection[i] + " " + crossSectionError[i]);
@@ -78,6 +92,13 @@ public class DataDealer {
 
     public String getLabel() {
         return label;
+    }
+
+    public boolean equals(DataDealer data){
+        return Arrays.equals(this.getEnergy(),(data.energy))
+                && Arrays.equals(this.getCrossSection(), data.getCrossSection())
+                && Arrays.equals(this.getCrossSectionError(),data.getCrossSectionError())
+                && this.getLabel().equals(data.getLabel());
     }
 
 

@@ -52,7 +52,6 @@ public class MainGUI {
         TFButton = new TFButton("calculate TF");
         TFButton.addActionListener(TFButton);
 
-
         openDialogButton = new JButton("open dialog window");
         openDialogButton.addActionListener(new OpenDialogButtonListener());
 
@@ -60,6 +59,7 @@ public class MainGUI {
         correctButton.addActionListener(correctButton);
 
         evaluateButton = new EvaluateButton("evaluate button");
+        evaluateButton.addActionListener(evaluateButton);
 
         sumButton = new SumButton("sum button");
         sumButton.addActionListener(sumButton);

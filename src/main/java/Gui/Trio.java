@@ -37,7 +37,6 @@ public class Trio extends JPanel {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            //String currentDir = System.getProperty("user.dir");
             final JFileChooser fileChooser = new JFileChooser(GlobalVariables.LAST_FOLDER);
             fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
 

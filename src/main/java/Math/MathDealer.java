@@ -3,9 +3,6 @@ package Math;
 import DataDealer.DataDealer;
 
 public class MathDealer {
-    public MathDealer() {
-
-    }
 
     public static double[][] calculateIntegralCrossSectionAndEnergyCenter(DataDealer data) {
         double[][] answer = new double[2][2];
@@ -150,5 +147,55 @@ public class MathDealer {
         if (data1.getLength() != data2.getLength()) {
             throw new Exception("arrays have not the same length");
         }
+    }
+
+    public static DataDealer setNewEnergies(DataDealer subject, DataDealer abutment){
+        double[] abutmentEnergies = abutment.getEnergy();
+        double[] subjectEnergies = subject.getEnergy();
+        double[] subjectValues = subject.getCrossSection();
+        double[] subjectErrors = subject.getCrossSectionError();
+        double[] newValues = new double[subjectValues.length];
+        double[] newErrors = new double[subjectErrors.length];
+        double h = subjectEnergies[subjectEnergies.length-1]-subjectEnergies[0]/subjectEnergies.length;
+        for (int i=0;i<abutment.getLength()-1;i++){
+            if(abutmentEnergies[i]<subjectEnergies[0] || abutmentEnergies[i] > subjectEnergies[subject.getLength()-1]){
+                newValues[i]=0;
+                newErrors[i]=h;
+            }
+            else{
+                for (int j = 0; j < subject.getLength() - 1; j++) {
+                    if(abutmentEnergies[i]>=subjectEnergies[j] && abutmentEnergies[i]<=subjectEnergies[j+1]){
+                        double first = pow2(subjectEnergies[j+1]-abutmentEnergies[i])*(2*(abutmentEnergies[i]-subjectEnergies[j])+h)/Math.pow(h,3);
+                        double second = pow2(abutmentEnergies[i]-subjectEnergies[j])*(2*(subjectEnergies[j+1]-abutmentEnergies[i])+h)/Math.pow(h,3);
+                        double third = pow2(subjectEnergies[j+1]-abutmentEnergies[i])*(abutmentEnergies[i]-subjectEnergies[j])/pow2(h);
+                        double forth = pow2(abutmentEnergies[i]-subjectEnergies[j])*(subjectEnergies[j+1]-abutmentEnergies[i])/pow2(h);
+
+                        if(j==0){
+                            first = first * subjectValues[0];
+                            second = second * subjectValues[1];
+                            third=third*(4*subjectValues[1]-subjectValues[2]-3*subjectValues[0])/(2*h);
+                            forth=forth*(subjectValues[2]-subjectValues[0])/(2*h);
+                        }
+                        else if(j==subjectValues.length-2){
+                            int lastInd = subjectValues.length-1;
+                            first = first * subjectValues[lastInd-1];
+                            second = second * subjectValues[lastInd];
+                            third = third * (subjectValues[lastInd]-subjectValues[lastInd-2])/(2*h);
+                            forth = forth *(3*subjectValues[lastInd]-subjectValues[lastInd-1]-3*subjectValues[lastInd-2])/(2*h);
+                        }
+                        else{
+                            first = first * subjectValues[j];
+                            second = second * subjectValues[j+1];
+                            third = third *(subjectValues[j+1])/(2*h);
+                            forth = forth*(subjectValues[j+2])/(2*h);
+                        }
+
+                        newValues[i]=first+second+third+forth;
+                        newErrors[i] = Math.sqrt(pow2(subjectErrors[j-1])+pow2(subjectErrors[j])+pow2(h));
+                    }
+                }
+            }
+        }
+        return new DataDealer(abutmentEnergies,newValues,newErrors,"NE");
     }
 }
