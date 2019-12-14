@@ -16,7 +16,16 @@
       <change beforePath="$PROJECT_DIR$/src/test/java/MathTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MathTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Project1-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project1-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/DataDealer/DataDealer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DataDealer/DataDealer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Math/MathDealer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Math/MathDealer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/Buttons/CorrectButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/Buttons/CorrectButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/Buttons/EvaluateButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/Buttons/EvaluateButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/Buttons/ICSButton$DoubleArrayToStringConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/Buttons/ICSButton$DoubleArrayToStringConverter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/Buttons/ICSButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/Buttons/ICSButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/Buttons/SumButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/Buttons/SumButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/Buttons/TFButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/Buttons/TFButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/MainGUI$OpenDialogButtonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/MainGUI$OpenDialogButtonListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/MainGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/MainGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Math/MathDealer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Math/QuickMath.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/MathTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/MathTest.class" afterDir="false" />
@@ -216,22 +225,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/MathTest.java</url>
-          <line>29</line>
+          <line>30</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ExtrapolationTest.java</url>
-          <line>74</line>
+          <line>76</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ExtrapolationTest.java</url>
-          <line>73</line>
+          <line>75</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ExtrapolationTest.java</url>
-          <line>72</line>
+          <line>74</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
