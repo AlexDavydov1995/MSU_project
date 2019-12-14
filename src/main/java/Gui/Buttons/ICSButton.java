@@ -2,8 +2,9 @@ package Gui.Buttons;
 
 import DataDealer.DataDealer;
 import Gui.Trio;
-import Math.MathDealer;
-import Math.QuickMath;
+
+import Math.BasicMath;
+import Math.IntegralCrossSectionCalculator;
 
 import javax.swing.*;
 import java.awt.*;
@@ -46,19 +47,20 @@ public class ICSButton extends JButton implements ActionListener {
         submitButton.addActionListener(actionEvent -> {
             String path = browseComponent.getFilePath();
             DataDealer data = new DataDealer(path);
-            double[][] answer = MathDealer.calculateIntegralCrossSectionAndEnergyCenter(data);
+            IntegralCrossSectionCalculator intCalculator = new IntegralCrossSectionCalculator();
+            double[][] answer = intCalculator.calculate(data);
 
             answerTextField.setText(new DoubleArrayToStringConverter().convert(answer));
 
         });
     }
 
-    class DoubleArrayToStringConverter {
-        String convert(double[][] array) {
-            String answer = new String();
+     static class DoubleArrayToStringConverter {
+         String convert(double[][] array) {
+            String answer = "";
             for (double[] subArray : array) {
                 for (double number : subArray) {
-                    answer += QuickMath.quickRound(number) + " ";
+                    answer += BasicMath.quickRound(number) + " ";
                     System.out.println(number);
                 }
             }

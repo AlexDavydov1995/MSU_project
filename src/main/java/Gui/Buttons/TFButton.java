@@ -3,7 +3,7 @@ package Gui.Buttons;
 import DataDealer.DataDealer;
 import FileDealer.FileDealer;
 import Gui.Trio;
-import Math.MathDealer;
+import Math.TransitionalFunctionsCalculator;
 
 import javax.swing.*;
 import java.awt.*;
@@ -42,7 +42,8 @@ public class TFButton extends JButton implements ActionListener {
             DataDealer yield = new DataDealer(yieldTrio.getFilePath());
 
             try {
-                DataDealer transitionalFunctions = MathDealer.calculateTransitionalFunction(partial, yield);
+                TransitionalFunctionsCalculator calculator = new TransitionalFunctionsCalculator();
+                DataDealer transitionalFunctions = calculator.calculate(partial, yield);
                 FileDealer fileDealer = new FileDealer();
                 String path = transitionalFunctions.getLabel()+".txt";
                 fileDealer.writeAFile(path, transitionalFunctions);

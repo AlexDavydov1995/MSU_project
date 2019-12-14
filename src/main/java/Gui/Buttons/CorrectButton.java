@@ -2,7 +2,7 @@ package Gui.Buttons;
 
 import DataDealer.DataDealer;
 import FileDealer.FileDealer;
-import Math.MathDealer;
+import Math.CorrectionCalculator;
 import Gui.Trio;
 
 import javax.swing.*;
@@ -39,7 +39,8 @@ public class CorrectButton extends JButton implements ActionListener {
             double energyCor = Double.parseDouble(energyField.getText());
             double ampCor = Double.parseDouble(ampField.getText());
             try {
-                DataDealer corData = MathDealer.correct(data, energyCor, ampCor);
+                CorrectionCalculator corCalculator = new CorrectionCalculator();
+                DataDealer corData = corCalculator.calculate(data, energyCor, ampCor);
                 FileDealer fileDealer = new FileDealer();
                 String path = corData.getLabel()+".txt";
                 fileDealer.writeAFile(path, corData);

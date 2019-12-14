@@ -11,11 +11,8 @@ public class DataDealer {
     private int length;
     private String label;
 
-    public DataDealer() {
-
-    }
-
     public DataDealer(double[] energy, double[] values, double[] errors, String label) {
+        assert checkLength(energy,values,errors);
         this.energy = energy;
         this.crossSection = values;
         this.crossSectionError = errors;
@@ -42,6 +39,7 @@ public class DataDealer {
         crossSection = new double[length];
         crossSectionError = new double[length];
         try {
+            assert checkLength(energy,crossSection,crossSectionError);
             int i = 0;
             for (String str : fileData) {
                 String[] temp = str.split("\\s");
@@ -95,10 +93,14 @@ public class DataDealer {
     }
 
     public boolean equals(DataDealer data){
+        return equalsIgnoreLabel(data) &&
+                 this.getLabel().equals(data.getLabel());
+    }
+
+    public boolean equalsIgnoreLabel(DataDealer data){
         return Arrays.equals(this.getEnergy(),(data.energy))
                 && Arrays.equals(this.getCrossSection(), data.getCrossSection())
-                && Arrays.equals(this.getCrossSectionError(),data.getCrossSectionError())
-                && this.getLabel().equals(data.getLabel());
+                && Arrays.equals(this.getCrossSectionError(),data.getCrossSectionError());
     }
 
 

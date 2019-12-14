@@ -2,7 +2,7 @@ package Gui.Buttons;
 
 import DataDealer.DataDealer;
 import FileDealer.FileDealer;
-import Math.MathDealer;
+import Math.SumCalculator;
 import Gui.Trio;
 
 import javax.swing.*;
@@ -39,8 +39,9 @@ public class SumButton extends JButton implements ActionListener {
         sumButton.addActionListener(ActionListener -> {
             DataDealer firstData = new DataDealer(firstFile.getFilePath());
             DataDealer secondData = new DataDealer(secondFile.getFilePath());
-            DataDealer sumData = MathDealer.sum(firstData,secondData);
             try {
+                SumCalculator calculator = new SumCalculator();
+                DataDealer sumData = calculator.calculate(firstData,secondData);
                 FileDealer fileDealer = new FileDealer();
                 String path = sumData.getLabel() + ".txt";
                 fileDealer.writeAFile(path, sumData);

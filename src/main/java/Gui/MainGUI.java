@@ -1,9 +1,6 @@
 package Gui;
 
-import DataDealer.DataDealer;
-import FileDealer.FileDealer;
 import Gui.Buttons.*;
-import Math.MathDealer;
 
 import javax.swing.*;
 import java.awt.*;

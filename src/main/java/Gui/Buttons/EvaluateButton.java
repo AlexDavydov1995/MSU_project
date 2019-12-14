@@ -9,7 +9,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import Math.MathDealer;
+import Math.EvaluatedCrossSectionCalculator;
 
 public class EvaluateButton extends JButton implements ActionListener {
 
@@ -39,7 +39,8 @@ public class EvaluateButton extends JButton implements ActionListener {
             DataDealer abutmentData = new DataDealer(abutmentTrio.getFilePath());
             DataDealer tfData = new DataDealer(tfTrio.getFilePath());
             try {
-                DataDealer answer = MathDealer.calculateEvaluatedCrossSections(tfData, abutmentData);
+                EvaluatedCrossSectionCalculator calculator = new EvaluatedCrossSectionCalculator();
+                DataDealer answer = calculator.calculate(tfData, abutmentData);
                 FileDealer fileDealer = new FileDealer();
                 String path = answer.getLabel()+".txt";
                 fileDealer.writeAFile(path,answer);
