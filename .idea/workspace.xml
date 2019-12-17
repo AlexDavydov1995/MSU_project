@@ -2,33 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20b8bf7a-b609-4dec-b181-752a5e3cdd85" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Math/BasicMath.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DataDealer/DataDealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataDealer/DataDealer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/Buttons/CorrectButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/Buttons/CorrectButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/Buttons/EvaluateButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/Buttons/EvaluateButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/Buttons/ICSButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/Buttons/ICSButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/Buttons/SumButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/Buttons/SumButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/Buttons/TFButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/Buttons/TFButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/MainGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/MainGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Math/MathDealer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Math/QuickMath.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MathTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MathTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Project1-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project1-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DataDealer/DataDealer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DataDealer/DataDealer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Gui/Buttons/CorrectButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/Buttons/CorrectButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Gui/Buttons/EvaluateButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/Buttons/EvaluateButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Gui/Buttons/ICSButton$DoubleArrayToStringConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/Buttons/ICSButton$DoubleArrayToStringConverter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Gui/Buttons/ICSButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/Buttons/ICSButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Gui/Buttons/SumButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/Buttons/SumButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Gui/Buttons/TFButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/Buttons/TFButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Gui/MainGUI$OpenDialogButtonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/MainGUI$OpenDialogButtonListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Gui/MainGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/MainGUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Math/MathDealer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Math/QuickMath.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/MathTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/MathTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Math/ExtrapolationCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Math/ExtrapolationCalculator.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
