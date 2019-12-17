@@ -13,42 +13,62 @@ public class ExtrapolationCalculator extends BasicMath implements ComplexMathDea
         double[] newEnergies = new double[abutmentEnergies.length];
         double[] newValues = new double[abutmentValues.length];
         double[] newErrors = new double[abutmentErrors.length];
-        double h = (subjectEnergies[subjectEnergies.length-1]-subjectEnergies[0])/(subjectEnergies.length-1);
-        double[] coefficients = new double[subjectEnergies.length];
-        for(int i=0;i<coefficients.length;i++){
-            if(i==0){
-                coefficients[i]=(4*subjectValues[i+1]-subjectValues[i+2]-3*subjectValues[i])/(2*h);
-            } else if(i==coefficients.length-1){
-                coefficients[i]=(4*subjectValues[i-1]-subjectValues[i-2]-3*subjectValues[i])/(2*h);
-            } else{
-                coefficients[i]=(subjectValues[i+1]-subjectValues[i-1])/(2*h);
-            }
+
+
+
+
+
+        return null;
+    }
+
+
+    private double[] calculateACoefficients(double[] function){
+        double[] aCoefficients = new double[function.length];
+        for(int i=0;i<aCoefficients.length;i++){
+            aCoefficients[i]=function[i];
         }
-        for(int i = 0;i<abutmentEnergies.length;i++){
-            if (abutmentEnergies[i]<subjectEnergies[0] || abutmentEnergies[i]>subjectEnergies[subjectEnergies.length-1]){
-                newValues[i]=0;
-                newErrors[i]=0;
-            } else {
-                for(int j = 0;j<coefficients.length-1;j++){
-                    if(abutmentEnergies[i]<=subjectEnergies[j+1] && abutmentEnergies[i]>=subjectEnergies[j]) {
-                        double first = pow2(subjectEnergies[j + 1] - abutmentEnergies[i]) *
-                                (2 * (abutmentEnergies[i] - subjectEnergies[j]) + h) / pow3(h);
-                        double second = pow2(abutmentEnergies[i] - subjectEnergies[j]) *
-                                (2 * (subjectEnergies[j + 1] - abutmentEnergies[i]) + h) / pow3(h);
-                        double third = pow2(subjectEnergies[j + 1] - abutmentEnergies[i]) *
-                                (abutmentEnergies[i] - subjectEnergies[j]) / pow2(h);
-                        double forth = pow2(abutmentEnergies[i] - subjectEnergies[j]) *
-                                (abutmentEnergies[i] - subjectEnergies[j]) / pow2(h);
-                        newValues[i] = first * subjectValues[j] + second * subjectValues[j+1] +
-                                third * coefficients[j] + forth * coefficients[j+1];
-                        newErrors[i] = Math.sqrt(pow2(subjectErrors[j]) + pow2(subjectErrors[j + 1]) + pow2(abutmentErrors[i]));
-                    }
-                }
-            }
-            newEnergies[i]=abutmentEnergies[i];
+        return aCoefficients;
+    }
+
+    private double[] calculateBCoefficients(double[] energies, double[] function, double[] cCoefficients){
+        double[] bCoefficients = new double[function.length];
+        bCoefficients[0]=0;
+        for(int i=1;i<bCoefficients.length;i++){
+            double h = function[i]-function[i-1];
+            bCoefficients[i]=(function[i]-function[i-1])/h+(2*cCoefficients[i]+cCoefficients[i-1])*h/3;
         }
-        //DataDealer answer = new DataDealer(newEnergies,newValues,newErrors,"ExtrapOf"+subject.getLabel());
-        return new DataDealer(newEnergies,newValues,newErrors,"ExtrapOf"+subject.getLabel());
+        return bCoefficients;
+    }
+
+    private double[] calculateDCoefficients(double[] cCoefficients, double[] function){
+        double[] dCoefficients = new double[function.length];
+        dCoefficients[0]=0;
+        for(int i=1;i<dCoefficients.length;i++){
+            double h = function[i]-function[i-1];
+            dCoefficients[i]=(cCoefficients[i]-cCoefficients[i-1])/(3*h);
+        }
+        return dCoefficients;
+    }
+
+    private double[] calculateCCoefficients(double[] function,double[] energies){
+        double[] cCoefficients = new double[function.length];
+        cCoefficients[0]=0;
+        cCoefficients[cCoefficients.length-1]=0;
+        /**
+         * we need to solve 3-diagonal matrix
+         * Thomas method
+         * Russian resource
+         * http://e-lib.gasu.ru/eposobia/metody/R_1_3.html
+         *http://www.simumath.net/library/book.html?code=Interpol_splines
+         */
+        double[] tempBCoefficients = new double[cCoefficients.length];
+        double[] steps = new double[cCoefficients.length];
+        tempBCoefficients[0]=tempBCoefficients[tempBCoefficients.length]=0;
+        for(int i=1;i<cCoefficients.length-1;i++){
+            tempBCoefficients[i]=6*((function[i+1]-function[i])/(energies[i+1]-energies[i])-(function[i]-function[i-1])/(energies[i]-energies[i-1]));
+        }
+
+        return cCoefficients;
     }
 
 }

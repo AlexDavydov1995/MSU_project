@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="20b8bf7a-b609-4dec-b181-752a5e3cdd85" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Math/ExtrapolationCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Math/ExtrapolationCalculator.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
