@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20b8bf7a-b609-4dec-b181-752a5e3cdd85" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.ignored" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Math/ExtrapolationCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Math/ExtrapolationCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Math/ExtrapolationCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Math/ExtrapolationCalculator.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,12 +122,12 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.MainClass" />
       <item itemvalue="JUnit.MathTest" />
       <item itemvalue="JUnit.ExtrapolationTest.testExtrapolationFirst" />
       <item itemvalue="JUnit.ExtrapolationTest.testExtrapolationThird" />
       <item itemvalue="JUnit.ExtrapolationTest" />
       <item itemvalue="JUnit.ExtrapolationTest.testExtrapolationForth" />
-      <item itemvalue="Application.MainClass" />
     </list>
     <recent_temporary>
       <list>
