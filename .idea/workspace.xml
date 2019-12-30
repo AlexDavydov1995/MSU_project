@@ -4,7 +4,10 @@
     <list default="true" id="20b8bf7a-b609-4dec-b181-752a5e3cdd85" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.ignored" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Math/ExtrapolationCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Math/ExtrapolationCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ExtrapolationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ExtrapolationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Math/ExtrapolationCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Math/ExtrapolationCalculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ExtrapolationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ExtrapolationTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +42,12 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565564501710" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -62,19 +71,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MainClass">
+  <component name="RunManager" selected="JUnit.ExtrapolationTest.testExtrapolationForth">
     <configuration name="MainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainClass" />
       <module name="Project1" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExtrapolationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Project1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ExtrapolationTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -95,6 +95,16 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ExtrapolationTest" />
       <option name="METHOD_NAME" value="testExtrapolationForth" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExtrapolationTest.testExtrapolationSecond" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ExtrapolationTest" />
+      <option name="METHOD_NAME" value="testExtrapolationSecond" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -125,17 +135,20 @@
       <item itemvalue="Application.MainClass" />
       <item itemvalue="JUnit.MathTest" />
       <item itemvalue="JUnit.ExtrapolationTest.testExtrapolationFirst" />
-      <item itemvalue="JUnit.ExtrapolationTest.testExtrapolationThird" />
-      <item itemvalue="JUnit.ExtrapolationTest" />
       <item itemvalue="JUnit.ExtrapolationTest.testExtrapolationForth" />
+<<<<<<< HEAD
+=======
+      <item itemvalue="JUnit.ExtrapolationTest.testExtrapolationSecond" />
+      <item itemvalue="JUnit.ExtrapolationTest.testExtrapolationThird" />
+>>>>>>> 307cbc3e483c3a774f64857ef3a3280ea6d4bc57
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MainClass" />
         <item itemvalue="JUnit.ExtrapolationTest.testExtrapolationForth" />
-        <item itemvalue="JUnit.ExtrapolationTest" />
+        <item itemvalue="JUnit.ExtrapolationTest.testExtrapolationSecond" />
         <item itemvalue="JUnit.ExtrapolationTest.testExtrapolationThird" />
         <item itemvalue="JUnit.ExtrapolationTest.testExtrapolationFirst" />
+        <item itemvalue="Application.MainClass" />
       </list>
     </recent_temporary>
   </component>
@@ -152,6 +165,7 @@
       <workItem from="1572638706459" duration="5347000" />
       <workItem from="1572680665631" duration="1005000" />
       <workItem from="1572716175865" duration="14189000" />
+      <workItem from="1576610807161" duration="330000" />
     </task>
     <task id="LOCAL-00001" summary="Revert &quot;Delete eXn.dat&quot;&#10;&#10;This reverts commit b16bad9c">
       <created>1572735243140</created>
@@ -218,6 +232,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/ExtrapolationTest.java</url>
           <line>74</line>
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ExtrapolationTest.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

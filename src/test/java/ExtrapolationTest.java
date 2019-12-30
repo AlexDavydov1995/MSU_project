@@ -10,13 +10,13 @@ public class ExtrapolationTest extends TestCase {
         double[] abutmentValues = {1.0,1.0, 1.0,1.0};
         double[] abutmentErrors = {0.0,0.0,0.0,0.0};
 
-        DataDealer subject = new DataDealer(abutmentEnergies,abutmentValues,abutmentErrors,"subject");
+        DataDealer abutment = new DataDealer(abutmentEnergies,abutmentValues,abutmentErrors,"subject");
 
         double[] extrEnergies = {1.5,2.5,3.5};
         double[] extrValues = {0.0,0.0,0.0};
         double[] extrErrors = {0.0,0.0,0.0};
 
-        DataDealer abutment = new DataDealer(extrEnergies,extrValues,extrErrors,"abutment");
+        DataDealer subject = new DataDealer(extrEnergies,extrValues,extrErrors,"abutment");
 
         double[] ansEnergies = {1.5, 2.5, 3.5};
         double[] ansValues = {1.0,1.0, 1.0};
@@ -30,17 +30,17 @@ public class ExtrapolationTest extends TestCase {
     }
 
     public void testExtrapolationSecond(){
-        double[] abutmentEnergies = {1.0, 2.0, 3.0, 4.0};
-        double[] abutmentValues = {100,200, 300,400};
-        double[] abutmentErrors = {0.0,0.0,0.0,0.0};
+        double[] abutmentEnergies = {0.0,1.0, 2.0, 3.0, 4.0, 5.0};
+        double[] abutmentValues = {0,100,200, 300,400,0};
+        double[] abutmentErrors = {0.0,0.0,0.0,0.0,0.0,0.0};
 
-        DataDealer subject = new DataDealer(abutmentEnergies,abutmentValues,abutmentErrors,"subject");
+        DataDealer abutment = new DataDealer(abutmentEnergies,abutmentValues,abutmentErrors,"subject");
 
         double[] extrEnergies = {1.5,2.5,3.5};
         double[] extrValues = {0.0,0.0,0.0};
         double[] extrErrors = {0.0,0.0,0.0};
 
-        DataDealer abutment = new DataDealer(extrEnergies,extrValues,extrErrors,"abutment");
+        DataDealer subject = new DataDealer(extrEnergies,extrValues,extrErrors,"abutment");
 
 
         double[] ansEnergies = {1.5, 2.5, 3.5};
@@ -59,13 +59,13 @@ public class ExtrapolationTest extends TestCase {
         double[] abutmentValues = {1.0,1, 1,1};
         double[] abutmentErrors = {0.0,0.0,0.0,0.0};
 
-        DataDealer subject = new DataDealer(abutmentEnergies,abutmentValues,abutmentErrors,"subject");
+        DataDealer abutment = new DataDealer(abutmentEnergies,abutmentValues,abutmentErrors,"subject");
 
         double[] extrEnergies = {0.5,1.5,2.5,3.5,4.5};
         double[] extrValues = {0,0,0.0,0.0,0.0};
         double[] extrErrors = {0,0,0.0,0.0,0.0};
 
-        DataDealer abutment = new DataDealer(extrEnergies,extrValues,extrErrors,"abutment");
+        DataDealer subject = new DataDealer(extrEnergies,extrValues,extrErrors,"abutment");
 
 
         double[] ansEnergies = {0.5,1.5, 2.5, 3.5,4.5};
@@ -80,11 +80,11 @@ public class ExtrapolationTest extends TestCase {
     }
 
     public void testExtrapolationForth(){
-        double[] abutmentEnergies = {1.0, 2.0, 3.0, 4.0};
-        double[] abutmentValues = {100,200, 300,400};
-        double[] abutmentErrors = {0.0,0.0,0.0,0.0};
+        double[] abutmentEnergies = {1.0, 2.0, 3.0, 4.0, 5.0,6.0};
+        double[] abutmentValues = {100,200, 300,400,500,600};
+        double[] abutmentErrors = {0.0,0.0,0.0,0.0,0.0,0.0};
 
-        DataDealer subject = new DataDealer(abutmentEnergies,abutmentValues,abutmentErrors,"subject");
+        DataDealer abutment = new DataDealer(abutmentEnergies,abutmentValues,abutmentErrors,"subject");
 
         double[] extrEnergies = new double[30];
         double[] extrValues  = new double[30];
@@ -95,7 +95,7 @@ public class ExtrapolationTest extends TestCase {
             extrErrors[i-10]=0;
         }
 
-        DataDealer abutment = new DataDealer(extrEnergies,extrValues,extrErrors,"abutment");
+        DataDealer subject = new DataDealer(extrEnergies,extrValues,extrErrors,"abutment");
 
 
         double[] ansEnergies = new double[30];
