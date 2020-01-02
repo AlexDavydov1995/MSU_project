@@ -27,6 +27,7 @@
       <change beforePath="$PROJECT_DIR$/target/classes/Math/CorrectionCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Math/CorrectionCalculator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Math/ExtrapolationCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Math/ExtrapolationCalculator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Math/IntegralCrossSectionCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Math/IntegralCrossSectionCalculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Math/SumCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Math/SumCalculator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Math/TransitionalFunctionsCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Math/TransitionalFunctionsCalculator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
