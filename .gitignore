@@ -1,0 +1,8 @@
+*.txt
+*/target/*
+*/out
+*/.idea/*
+*/workspace.xml
+logs
+target/*
+target

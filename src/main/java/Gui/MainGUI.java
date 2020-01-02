@@ -1,6 +1,8 @@
 package Gui;
 
 import Gui.Buttons.*;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import javax.swing.*;
 import java.awt.*;
@@ -27,6 +29,8 @@ public class MainGUI {
     JTextField pathToFile2;
 
     public void go() {
+        Logger logger = LogManager.getRootLogger();
+        logger.info(getClass());
         JFrame myFrame = new JFrame();
         initializeElements();
         attachElements(myFrame);
@@ -96,7 +100,7 @@ public class MainGUI {
     }
 
     //LISTENERS SECTION
-    class OpenDialogButtonListener implements ActionListener {
+    static class OpenDialogButtonListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
             JFrame dialogFrame = new JFrame();

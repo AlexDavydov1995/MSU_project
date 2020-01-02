@@ -1,13 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="20b8bf7a-b609-4dec-b181-752a5e3cdd85" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.ignored" afterDir="false" />
+    <list default="true" id="6e14d45b-cb26-4873-b0b5-328a541ab0fa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Math/ExtrapolationCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Math/ExtrapolationCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ignored" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Project1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DataDealer/DataDealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataDealer/DataDealer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/MainGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/MainGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Math/CorrectionCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Math/CorrectionCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Math/IntegralCrossSectionCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Math/IntegralCrossSectionCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Math/SumCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Math/SumCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Math/TransitionalFunctionsCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Math/TransitionalFunctionsCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ExtrapolationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ExtrapolationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Project1-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DataDealer/DataDealer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DataDealer/DataDealer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/MainGUI$OpenDialogButtonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/MainGUI$OpenDialogButtonListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/MainGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/MainGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Project1.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Math/CorrectionCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Math/CorrectionCalculator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Math/ExtrapolationCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Math/ExtrapolationCalculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ExtrapolationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ExtrapolationTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Math/IntegralCrossSectionCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Math/IntegralCrossSectionCalculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Math/TransitionalFunctionsCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Math/TransitionalFunctionsCalculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-MathTest.xml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,48 +41,19 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CodeStyleSettingsInfer">
-    <option name="done" value="true" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectCodeStyleSettingsMigration">
-    <option name="version" value="1" />
-  </component>
-  <component name="ProjectId" id="1RZLZjJKW5RgNOSRT10qxgdvGj4" />
+  <component name="ProjectId" id="1VoIjElcrwRVqlqybi7P32NKnqX" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565564501710" />
-    <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="vars" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -71,7 +68,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ExtrapolationTest.testExtrapolationForth">
+  <component name="RunManager">
     <configuration name="MainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainClass" />
       <module name="Project1" />
@@ -79,75 +76,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExtrapolationTest.testExtrapolationFirst" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="Project1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ExtrapolationTest" />
-      <option name="METHOD_NAME" value="testExtrapolationFirst" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExtrapolationTest.testExtrapolationForth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Project1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ExtrapolationTest" />
-      <option name="METHOD_NAME" value="testExtrapolationForth" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExtrapolationTest.testExtrapolationSecond" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Project1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ExtrapolationTest" />
-      <option name="METHOD_NAME" value="testExtrapolationSecond" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExtrapolationTest.testExtrapolationThird" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Project1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ExtrapolationTest" />
-      <option name="METHOD_NAME" value="testExtrapolationThird" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MathTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
-      <module name="Project1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MathTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.MainClass" />
-      <item itemvalue="JUnit.MathTest" />
-      <item itemvalue="JUnit.ExtrapolationTest.testExtrapolationFirst" />
-      <item itemvalue="JUnit.ExtrapolationTest.testExtrapolationForth" />
-<<<<<<< HEAD
-=======
-      <item itemvalue="JUnit.ExtrapolationTest.testExtrapolationSecond" />
-      <item itemvalue="JUnit.ExtrapolationTest.testExtrapolationThird" />
->>>>>>> 307cbc3e483c3a774f64857ef3a3280ea6d4bc57
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ExtrapolationTest.testExtrapolationForth" />
-        <item itemvalue="JUnit.ExtrapolationTest.testExtrapolationSecond" />
-        <item itemvalue="JUnit.ExtrapolationTest.testExtrapolationThird" />
-        <item itemvalue="JUnit.ExtrapolationTest.testExtrapolationFirst" />
         <item itemvalue="Application.MainClass" />
       </list>
     </recent_temporary>
@@ -157,35 +87,13 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="20b8bf7a-b609-4dec-b181-752a5e3cdd85" name="Default Changelist" comment="" />
-      <created>1564518841322</created>
+      <changelist id="6e14d45b-cb26-4873-b0b5-328a541ab0fa" name="Default Changelist" comment="" />
+      <created>1577913154105</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1564518841322</updated>
-      <workItem from="1572638706459" duration="5347000" />
-      <workItem from="1572680665631" duration="1005000" />
-      <workItem from="1572716175865" duration="14189000" />
-      <workItem from="1576610807161" duration="330000" />
+      <updated>1577913154105</updated>
     </task>
-    <task id="LOCAL-00001" summary="Revert &quot;Delete eXn.dat&quot;&#10;&#10;This reverts commit b16bad9c">
-      <created>1572735243140</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1572735243140</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Revert &quot;Delete e1n.dat&quot;&#10;&#10;This reverts commit 55206097">
-      <created>1572735252579</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1572735252579</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -200,43 +108,13 @@
       </map>
     </option>
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Revert &quot;Delete eXn.dat&quot;&#10;&#10;This reverts commit b16bad9c" />
-    <MESSAGE value="Revert &quot;Delete e1n.dat&quot;&#10;&#10;This reverts commit 55206097" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;Delete e1n.dat&quot;&#10;&#10;This reverts commit 55206097" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Gui/interfaces/MyRunnable.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/Math/CorrectionCalculator.java</url>
           <line>12</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/MathTest.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ExtrapolationTest.java</url>
-          <line>76</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ExtrapolationTest.java</url>
-          <line>75</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ExtrapolationTest.java</url>
-          <line>74</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ExtrapolationTest.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="23" />
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

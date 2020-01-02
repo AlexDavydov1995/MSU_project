@@ -103,5 +103,9 @@ public class DataDealer {
                 && Arrays.equals(this.getCrossSectionError(),data.getCrossSectionError());
     }
 
+    public String toString(){
+        return this.label+"\t"+this.length;
+    }
+
 
 }

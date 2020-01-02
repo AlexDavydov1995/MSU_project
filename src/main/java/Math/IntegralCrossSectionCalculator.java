@@ -1,11 +1,18 @@
 package Math;
 
 import DataDealer.DataDealer;
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class IntegralCrossSectionCalculator extends BasicMath implements SimpleMathDealer{
 
     @Override
     public double[][] calculate(DataDealer data) {
+        Logger logger = LogManager.getLogger();
+        logger.info(logger.getName());
+        logger.info(logger.getLevel());
+        logger.info("integral cross sections \n getting data from "+data.toString());
         double[][] answer = new double[2][2];
         double integralCrossSection = 0;
         double errorCrossSection = 0;
@@ -39,7 +46,7 @@ public class IntegralCrossSectionCalculator extends BasicMath implements SimpleM
         answer[0][1] = errorCrossSection;
         answer[1][0] = energyCenter;
         answer[1][1] = errorEnergyCenter;
-
+        logger.info(integralCrossSection+"\t"+energyCenter);
         return answer;
     }
 }

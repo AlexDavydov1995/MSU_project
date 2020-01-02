@@ -115,6 +115,4 @@ public class ExtrapolationTest extends TestCase {
         assertTrue(testAns.equalsIgnoreLabel(ans));
     }
 
-
-
 }
