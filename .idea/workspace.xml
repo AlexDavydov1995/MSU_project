@@ -3,10 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="20b8bf7a-b609-4dec-b181-752a5e3cdd85" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Math/ExtrapolationCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Math/ExtrapolationCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ExtrapolationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ExtrapolationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Math/ExtrapolationCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Math/ExtrapolationCalculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ExtrapolationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ExtrapolationTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/Buttons/SumButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/Buttons/SumButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/Buttons/TFButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/Buttons/TFButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/MainGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/MainGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/Trio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/Trio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/Buttons/SumButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/Buttons/SumButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/Buttons/TFButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/Buttons/TFButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/MainGUI$OpenDialogButtonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/MainGUI$OpenDialogButtonListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/MainGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/MainGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/Trio$BrowseButtonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/Trio$BrowseButtonListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/Trio.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/Trio.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +76,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ExtrapolationTest.testExtrapolationForth">
+  <component name="RunManager" selected="Application.MainClass">
     <configuration name="MainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainClass" />
       <module name="Project1" />
@@ -78,13 +84,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExtrapolationTest.testExtrapolationFirst" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration name="ExtrapolationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ExtrapolationTest" />
-      <option name="METHOD_NAME" value="testExtrapolationFirst" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -133,18 +137,18 @@
     <list>
       <item itemvalue="Application.MainClass" />
       <item itemvalue="JUnit.MathTest" />
-      <item itemvalue="JUnit.ExtrapolationTest.testExtrapolationFirst" />
       <item itemvalue="JUnit.ExtrapolationTest.testExtrapolationForth" />
       <item itemvalue="JUnit.ExtrapolationTest.testExtrapolationSecond" />
       <item itemvalue="JUnit.ExtrapolationTest.testExtrapolationThird" />
+      <item itemvalue="JUnit.ExtrapolationTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainClass" />
+        <item itemvalue="JUnit.ExtrapolationTest" />
         <item itemvalue="JUnit.ExtrapolationTest.testExtrapolationForth" />
         <item itemvalue="JUnit.ExtrapolationTest.testExtrapolationSecond" />
         <item itemvalue="JUnit.ExtrapolationTest.testExtrapolationThird" />
-        <item itemvalue="JUnit.ExtrapolationTest.testExtrapolationFirst" />
-        <item itemvalue="Application.MainClass" />
       </list>
     </recent_temporary>
   </component>
@@ -162,6 +166,9 @@
       <workItem from="1572680665631" duration="1005000" />
       <workItem from="1572716175865" duration="14189000" />
       <workItem from="1576610807161" duration="330000" />
+      <workItem from="1577111049309" duration="2015000" />
+      <workItem from="1577133031773" duration="4040000" />
+      <workItem from="1578252646560" duration="1200000" />
     </task>
     <task id="LOCAL-00001" summary="Revert &quot;Delete eXn.dat&quot;&#10;&#10;This reverts commit b16bad9c">
       <created>1572735243140</created>

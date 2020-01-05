@@ -28,6 +28,14 @@ public class Trio extends JPanel {
         this.add(text);
     }
 
+    public Trio(String textOfLabel, String textOfTextField){
+      this(textOfLabel,textOfTextField,"Browse");
+    }
+
+    public Trio(String textOfLabel){
+        this(textOfLabel, "");
+    }
+
     public String getFilePath() {
         return text.getText();
     }

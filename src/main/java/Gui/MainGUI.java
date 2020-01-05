@@ -15,6 +15,7 @@ public class MainGUI {
     CorrectButton correctButton;
     EvaluateButton evaluateButton;
     SumButton sumButton;
+    ExtrapolationButton extrapolationButton;
 
     JButton openDialogButton;
     JTextField myTextField;
@@ -41,7 +42,7 @@ public class MainGUI {
         pathToFile1 = new JTextField(hello);
         pathToFile2 = new JTextField(hello);
 
-        buttonPanel = new JPanel(new GridLayout(6, 1));
+        buttonPanel = new JPanel(new GridLayout(7, 1));
 
         ICSButton = new ICSButton("calculate ICS");
         ICSButton.addActionListener(ICSButton);
@@ -61,12 +62,16 @@ public class MainGUI {
         sumButton = new SumButton("sum button");
         sumButton.addActionListener(sumButton);
 
+        extrapolationButton = new ExtrapolationButton("set new energy grid");
+        extrapolationButton.addActionListener(extrapolationButton);
+
         buttonPanel.add(ICSButton);
         buttonPanel.add(TFButton);
         buttonPanel.add(correctButton);
         buttonPanel.add(evaluateButton);
         buttonPanel.add(sumButton);
         buttonPanel.add(openDialogButton);
+        buttonPanel.add(extrapolationButton);
 
     }
 

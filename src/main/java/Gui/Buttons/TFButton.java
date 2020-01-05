@@ -11,7 +11,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 
-public class TFButton extends JButton implements ActionListener {
+public class TFButton extends BaseComplexButton implements ActionListener {
 
     public TFButton(String name){
         super(name);
@@ -21,13 +21,9 @@ public class TFButton extends JButton implements ActionListener {
         JFrame dialogFrame = new JFrame();
         JPanel gridPanel = new JPanel(new GridLayout(3,1));
 
-        dialogFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        dialogFrame.setSize(400,150);
-
         Trio partialTrio = new Trio("enter path to partial here","e1n.dat","Browse");
 
         Trio yieldTrio = new Trio("enter path to yield here","eXn.dat","Browse");
-
 
         JPanel calculatePanel = new JPanel(new BorderLayout());
         JPanel leftPanel = new JPanel(new GridLayout(2,1));
@@ -63,7 +59,7 @@ public class TFButton extends JButton implements ActionListener {
 
         dialogFrame.getContentPane().add(gridPanel);
 
-        dialogFrame.setVisible(true);
+        finalizeButton(dialogFrame);
 
     }
 }

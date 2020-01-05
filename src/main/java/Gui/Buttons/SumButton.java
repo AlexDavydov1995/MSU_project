@@ -10,7 +10,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class SumButton extends JButton implements ActionListener {
+public class SumButton extends BaseComplexButton implements ActionListener {
 
     public SumButton(String name){
         super(name);
@@ -19,8 +19,6 @@ public class SumButton extends JButton implements ActionListener {
     public void actionPerformed(ActionEvent e){
 
         JFrame dialogFrame = new JFrame();
-        dialogFrame.setSize(300,150);
-        dialogFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
         JPanel mainGrid = new JPanel(new GridLayout(3,1));
 
@@ -52,9 +50,6 @@ public class SumButton extends JButton implements ActionListener {
             }
         });
 
-
-
-
         sumButtonGrid.add(sumLabel);
         sumButtonGrid.add(sumButton);
 
@@ -66,6 +61,6 @@ public class SumButton extends JButton implements ActionListener {
         mainGrid.add(sumBorder);
 
         dialogFrame.getContentPane().add(mainGrid);
-        dialogFrame.setVisible(true);
+        finalizeButton(dialogFrame);
     }
 }
