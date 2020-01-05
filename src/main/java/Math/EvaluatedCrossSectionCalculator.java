@@ -4,6 +4,7 @@ import DataDealer.DataDealer;
 
 public class EvaluatedCrossSectionCalculator extends BasicMath implements ComplexMathDealer {
     public DataDealer calculate(DataDealer tf, DataDealer yield) throws Exception {
+        logger.info(logger.getName());
         checkLength(tf, yield);
         int length = tf.getLength();
         double[] energy = new double[length];
@@ -19,6 +20,7 @@ public class EvaluatedCrossSectionCalculator extends BasicMath implements Comple
         }
         String multiplicity = tf.getLabel().replaceAll("\\D", "");
         DataDealer evaluation = new DataDealer(energy, values, errors, "Eval" + multiplicity);
+        logger.trace(evaluation.toString());
         return evaluation;
     }
 }

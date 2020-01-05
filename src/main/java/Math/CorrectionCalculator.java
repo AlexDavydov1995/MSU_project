@@ -1,12 +1,9 @@
 package Math;
 
 import DataDealer.DataDealer;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 public class CorrectionCalculator extends BasicMath implements SemiComplexMathDealer {
     public DataDealer calculate(DataDealer data, double energyCorrection, double crossSectionCorrection) {
-        Logger logger = LogManager.getLogger();
         logger.info(logger.getName());
         int length = data.getLength();
         double[] energy = new double[length];
@@ -19,6 +16,7 @@ public class CorrectionCalculator extends BasicMath implements SemiComplexMathDe
             logger.trace("current row" + energy[i]+"\t"+values[i]+"\t"+errors[i]);
         }
         DataDealer correction = new DataDealer(energy, values, errors, "Cor" + data.getLabel());
+        logger.info(correction.toString());
         return correction;
     }
 

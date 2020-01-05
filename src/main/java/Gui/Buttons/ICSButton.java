@@ -49,9 +49,7 @@ public class ICSButton extends JButton implements ActionListener {
             DataDealer data = new DataDealer(path);
             IntegralCrossSectionCalculator intCalculator = new IntegralCrossSectionCalculator();
             double[][] answer = intCalculator.calculate(data);
-
             answerTextField.setText(new DoubleArrayToStringConverter().convert(answer));
-
         });
     }
 
@@ -61,7 +59,7 @@ public class ICSButton extends JButton implements ActionListener {
             for (double[] subArray : array) {
                 for (double number : subArray) {
                     answer += BasicMath.quickRound(number) + " ";
-                    System.out.println(number);
+                    //System.out.println(number);
                 }
             }
             return answer;

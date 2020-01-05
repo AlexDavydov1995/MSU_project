@@ -2,39 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e14d45b-cb26-4873-b0b5-328a541ab0fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_8_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_8_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ignored" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Project1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DataDealer/DataDealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataDealer/DataDealer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/MainGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/MainGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FileDealer/FileDealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FileDealer/FileDealer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/Buttons/ICSButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/Buttons/ICSButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Math/BasicMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Math/BasicMath.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Math/CorrectionCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Math/CorrectionCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Math/EvaluatedCrossSectionCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Math/EvaluatedCrossSectionCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Math/ExtrapolationCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Math/ExtrapolationCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Math/IntegralCrossSectionCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Math/IntegralCrossSectionCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Math/SumCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Math/SumCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Math/TransitionalFunctionsCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Math/TransitionalFunctionsCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ExtrapolationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ExtrapolationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Project1-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DataDealer/DataDealer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DataDealer/DataDealer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Gui/MainGUI$OpenDialogButtonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/MainGUI$OpenDialogButtonListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Gui/MainGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/MainGUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Project1.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FileDealer/FileDealer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FileDealer/FileDealer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/Buttons/ICSButton$DoubleArrayToStringConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/Buttons/ICSButton$DoubleArrayToStringConverter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/Buttons/ICSButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/Buttons/ICSButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Math/BasicMath.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Math/BasicMath.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Math/CorrectionCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Math/CorrectionCalculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Math/EvaluatedCrossSectionCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Math/EvaluatedCrossSectionCalculator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Math/ExtrapolationCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Math/ExtrapolationCalculator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Math/IntegralCrossSectionCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Math/IntegralCrossSectionCalculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Math/SumCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Math/SumCalculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Math/TransitionalFunctionsCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Math/TransitionalFunctionsCalculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-MathTest.xml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -108,16 +91,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Math/CorrectionCalculator.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
