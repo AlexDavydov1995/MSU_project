@@ -1,10 +1,14 @@
 package Math;
 
 import DataDealer.DataDealer;
+import org.apache.logging.log4j.*;
 
 public class TransitionalFunctionsCalculator extends BasicMath implements ComplexMathDealer {
     @Override
     public  DataDealer calculate(DataDealer partial, DataDealer yield) throws Exception {
+        Logger logger = LogManager.getLogger();
+        logger.info(logger.getLevel());
+        logger.info(logger.getName());
         checkLength(partial, yield);
         int length = partial.getLength();
         double[] energy = new double[length];
@@ -34,6 +38,7 @@ public class TransitionalFunctionsCalculator extends BasicMath implements Comple
                     System.out.println(e + "\n error in cross errors");
                 }
             }
+            logger.trace("current row\t" + energy[i]+"\t"+values[i]+"\t"+errors[i]);
         }
         String multiplicity = partial.getLabel().replaceAll("\\D", "");
         return new DataDealer(energy, values, errors, "F" + multiplicity);

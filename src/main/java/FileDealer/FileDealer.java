@@ -33,10 +33,8 @@ public class FileDealer {
             for (int i = 0; i < data.getLength(); i++) {
                 String line = data.getEnergyByIndex(i) + "\t"
                         + data.getCrossSectionByIndex(i) + "\t"
-                        + data.getCrossSectionErrorByIndex(i);
-                System.out.println(line);
+                        + data.getCrossSectionErrorByIndex(i)+"\n";
                 fileWriter.append(line);
-                fileWriter.append("\n");
             }
         } catch (Exception e) {
             e.printStackTrace();

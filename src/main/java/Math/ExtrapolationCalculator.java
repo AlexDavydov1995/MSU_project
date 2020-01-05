@@ -4,6 +4,7 @@ import DataDealer.DataDealer;
 
 public class ExtrapolationCalculator extends BasicMath implements ComplexMathDealer {
     public DataDealer calculate(DataDealer subject, DataDealer abutment) {
+        logger.info(logger.getName());
         double[] abutmentEnergies = abutment.getEnergy();
         double[] abutmentValues = abutment.getCrossSection();
         double[] abutmentErrors = abutment.getCrossSectionError();
