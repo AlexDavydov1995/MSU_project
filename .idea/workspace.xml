@@ -1,23 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e14d45b-cb26-4873-b0b5-328a541ab0fa" name="Default Changelist" comment="">
+    <list default="true" id="6ea64d3a-00c4-4a53-8db6-332d660ff772" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/FileDealer/FileDealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FileDealer/FileDealer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/Buttons/ICSButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/Buttons/ICSButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Math/BasicMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Math/BasicMath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/MainGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/MainGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Math/CorrectionCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Math/CorrectionCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Math/EvaluatedCrossSectionCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Math/EvaluatedCrossSectionCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Math/ExtrapolationCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Math/ExtrapolationCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Math/IntegralCrossSectionCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Math/IntegralCrossSectionCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Math/SumCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Math/SumCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Math/TransitionalFunctionsCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Math/TransitionalFunctionsCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2-disable.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/FileDealer/FileDealer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FileDealer/FileDealer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Gui/Buttons/ICSButton$DoubleArrayToStringConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/Buttons/ICSButton$DoubleArrayToStringConverter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Gui/Buttons/ICSButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/Buttons/ICSButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Math/BasicMath.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Math/BasicMath.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/MainGUI$OpenDialogButtonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/MainGUI$OpenDialogButtonListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/MainGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/MainGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainClass.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Math/CorrectionCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Math/CorrectionCalculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Math/EvaluatedCrossSectionCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Math/EvaluatedCrossSectionCalculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Math/ExtrapolationCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Math/ExtrapolationCalculator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Math/IntegralCrossSectionCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Math/IntegralCrossSectionCalculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Math/SumCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Math/SumCalculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Math/TransitionalFunctionsCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Math/TransitionalFunctionsCalculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,20 +28,32 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Tag Library Descriptor" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1VoIjElcrwRVqlqybi7P32NKnqX" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="1" id="Add" />
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
   </component>
+  <component name="ProjectId" id="1WAuODI3sXu60yJqE8dsjYs688j" />
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-    </key>
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -52,122 +67,33 @@
       </list>
     </option>
   </component>
-<<<<<<< HEAD
-  <component name="RunManager" selected="Application.MainClass">
-=======
   <component name="RunManager">
->>>>>>> 7583d1458d952ad560e76bd8adb707c08810a27e
-    <configuration name="MainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainClass" />
       <module name="Project1" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-<<<<<<< HEAD
-    <configuration name="ExtrapolationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Project1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ExtrapolationTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExtrapolationTest.testExtrapolationForth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Project1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ExtrapolationTest" />
-      <option name="METHOD_NAME" value="testExtrapolationForth" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExtrapolationTest.testExtrapolationSecond" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Project1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ExtrapolationTest" />
-      <option name="METHOD_NAME" value="testExtrapolationSecond" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExtrapolationTest.testExtrapolationThird" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Project1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ExtrapolationTest" />
-      <option name="METHOD_NAME" value="testExtrapolationThird" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MathTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
-      <module name="Project1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MathTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.MainClass" />
-      <item itemvalue="JUnit.MathTest" />
-      <item itemvalue="JUnit.ExtrapolationTest.testExtrapolationForth" />
-      <item itemvalue="JUnit.ExtrapolationTest.testExtrapolationSecond" />
-      <item itemvalue="JUnit.ExtrapolationTest.testExtrapolationThird" />
-      <item itemvalue="JUnit.ExtrapolationTest" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.MainClass" />
-        <item itemvalue="JUnit.ExtrapolationTest" />
-        <item itemvalue="JUnit.ExtrapolationTest.testExtrapolationForth" />
-        <item itemvalue="JUnit.ExtrapolationTest.testExtrapolationSecond" />
-        <item itemvalue="JUnit.ExtrapolationTest.testExtrapolationThird" />
-=======
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.MainClass" />
->>>>>>> 7583d1458d952ad560e76bd8adb707c08810a27e
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6e14d45b-cb26-4873-b0b5-328a541ab0fa" name="Default Changelist" comment="" />
-      <created>1577913154105</created>
+      <changelist id="6ea64d3a-00c4-4a53-8db6-332d660ff772" name="Default Changelist" comment="" />
+      <created>1578604232309</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-<<<<<<< HEAD
-      <updated>1564518841322</updated>
-      <workItem from="1572638706459" duration="5347000" />
-      <workItem from="1572680665631" duration="1005000" />
-      <workItem from="1572716175865" duration="14189000" />
-      <workItem from="1576610807161" duration="330000" />
-      <workItem from="1577111049309" duration="2015000" />
-      <workItem from="1577133031773" duration="4040000" />
-      <workItem from="1578252646560" duration="1200000" />
-    </task>
-    <task id="LOCAL-00001" summary="Revert &quot;Delete eXn.dat&quot;&#10;&#10;This reverts commit b16bad9c">
-      <created>1572735243140</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1572735243140</updated>
-=======
-      <updated>1577913154105</updated>
->>>>>>> 7583d1458d952ad560e76bd8adb707c08810a27e
+      <updated>1578604232309</updated>
+      <workItem from="1578604252490" duration="415000" />
+      <workItem from="1578604690128" duration="4717000" />
+      <workItem from="1578663387449" duration="8628000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

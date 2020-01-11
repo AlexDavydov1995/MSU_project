@@ -1,14 +1,11 @@
 package Math;
 
 import DataDealer.DataDealer;
-import org.apache.logging.log4j.*;
 
 public class TransitionalFunctionsCalculator extends BasicMath implements ComplexMathDealer {
     @Override
     public  DataDealer calculate(DataDealer partial, DataDealer yield) throws Exception {
-        Logger logger = LogManager.getLogger();
-        logger.info(logger.getLevel());
-        logger.info(logger.getName());
+        logger.info("calculating TF");
         checkLength(partial, yield);
         int length = partial.getLength();
         double[] energy = new double[length];
@@ -25,7 +22,6 @@ public class TransitionalFunctionsCalculator extends BasicMath implements Comple
                 values[i] = partial.getCrossSectionByIndex(i) / yield.getCrossSectionByIndex(i);
 
             } catch (ArithmeticException e) {
-                System.out.println(e + "\n error in cross sections");
             }
             if (partial.getCrossSectionByIndex(i) == 0 && partial.getCrossSectionErrorByIndex(i) == 0) {
                 errors[i] = 0;
@@ -35,10 +31,8 @@ public class TransitionalFunctionsCalculator extends BasicMath implements Comple
                     errors[i] = Math.sqrt(pow2(1 / yield.getCrossSectionByIndex(i) * partial.getCrossSectionErrorByIndex(i)) +
                             pow2((partial.getCrossSectionByIndex(i) / pow2(yield.getCrossSectionByIndex(i) * yield.getCrossSectionErrorByIndex(i)))));
                 } catch (ArithmeticException e) {
-                    System.out.println(e + "\n error in cross errors");
                 }
             }
-            logger.trace("current row\t" + energy[i]+"\t"+values[i]+"\t"+errors[i]);
         }
         String multiplicity = partial.getLabel().replaceAll("\\D", "");
         return new DataDealer(energy, values, errors, "F" + multiplicity);

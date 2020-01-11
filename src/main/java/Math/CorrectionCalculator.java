@@ -16,7 +16,7 @@ public class CorrectionCalculator extends BasicMath implements SemiComplexMathDe
             logger.trace("current row" + energy[i]+"\t"+values[i]+"\t"+errors[i]);
         }
         DataDealer correction = new DataDealer(energy, values, errors, "Cor" + data.getLabel());
-        logger.info(correction.toString());
+        logger.trace(correction.toString());
         return correction;
     }
 

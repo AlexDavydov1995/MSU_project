@@ -30,7 +30,7 @@ public class MainGUI {
     JTextField pathToFile2;
 
     public void go() {
-        Logger logger = LogManager.getRootLogger();
+        Logger logger = LogManager.getLogger();
         logger.info(getClass());
         JFrame myFrame = new JFrame();
         initializeElements();

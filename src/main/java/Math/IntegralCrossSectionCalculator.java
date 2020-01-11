@@ -9,10 +9,7 @@ public class IntegralCrossSectionCalculator extends BasicMath implements SimpleM
 
     @Override
     public double[][] calculate(DataDealer data) {
-        Logger logger = LogManager.getLogger();
-        logger.info(logger.getName());
-        logger.info(logger.getLevel());
-        logger.info("integral cross sections --- getting data from "+data.toString());
+        logger.info("Calculating integral cross sections");
         double[][] answer = new double[2][2];
         double integralCrossSection = 0;
         double errorCrossSection = 0;
