@@ -1,99 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ea64d3a-00c4-4a53-8db6-332d660ff772" name="Default Changelist" comment="">
+    <list default="true" id="439fa1a0-8d23-4d74-8c8e-802c1e212950" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FileDealer/FileDealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FileDealer/FileDealer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/Buttons/BaseComplexButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/Buttons/BaseComplexButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/Buttons/ExtrapolationButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/Buttons/ExtrapolationButton.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Gui/MainGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/MainGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Math/CorrectionCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Math/CorrectionCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Math/IntegralCrossSectionCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Math/IntegralCrossSectionCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Math/SumCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Math/SumCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Math/TransitionalFunctionsCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Math/TransitionalFunctionsCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2-disable.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FileDealer/FileDealer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FileDealer/FileDealer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Gui/MainGUI$OpenDialogButtonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/MainGUI$OpenDialogButtonListener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Gui/MainGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/MainGUI.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/MainClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Math/CorrectionCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Math/CorrectionCalculator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Math/IntegralCrossSectionCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Math/IntegralCrossSectionCalculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Math/SumCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Math/SumCalculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Math/TransitionalFunctionsCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Math/TransitionalFunctionsCalculator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CodeStyleSettingsInfer">
-    <option name="done" value="true" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Tag Library Descriptor" />
-      </list>
-    </option>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectCodeStyleSettingsMigration">
-    <option name="version" value="1" />
-  </component>
-  <component name="ProjectId" id="1WAuODI3sXu60yJqE8dsjYs688j" />
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+  <component name="ProjectId" id="1WFcc9BpT51gLv91IsR5H62FCFF" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+  </component>
+  <component name="RunManager" selected="Application.MainClass">
+    <configuration name="MainClass" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainClass" />
-      <module name="Project1" />
+      <module name="MSU_project" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="[clean,compile]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="compile" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="true" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.MainClass" />
+      <item itemvalue="Maven.[clean,compile]" />
+    </list>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6ea64d3a-00c4-4a53-8db6-332d660ff772" name="Default Changelist" comment="" />
-      <created>1578604232309</created>
+      <changelist id="439fa1a0-8d23-4d74-8c8e-802c1e212950" name="Default Changelist" comment="" />
+      <created>1578748859603</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1578604232309</updated>
-      <workItem from="1578604252490" duration="415000" />
-      <workItem from="1578604690128" duration="4717000" />
-      <workItem from="1578663387449" duration="8628000" />
+      <updated>1578748859603</updated>
     </task>
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -107,5 +127,51 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="396" y="100" key="#MainClass" timestamp="1578749868615">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="396" y="100" key="#MainClass/0.0.1440.900@0.0.1440.900" timestamp="1578749868615" />
+    <state x="320" y="115" key="#Project_Structure" timestamp="1578750266306">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="115" key="#Project_Structure/0.0.1440.900@0.0.1440.900" timestamp="1578750266306" />
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578750051662">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1578750051662" />
+    <state x="457" y="241" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1578749804638">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="457" y="241" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1578749804638" />
+    <state x="474" y="222" key="EnvironmentVariablesDialog" timestamp="1578749931581">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="474" y="222" key="EnvironmentVariablesDialog/0.0.1440.900@0.0.1440.900" timestamp="1578749931581" />
+    <state width="699" height="245" key="GridCell.Tab.0.bottom" timestamp="1578752337133">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="699" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1578752337133" />
+    <state width="699" height="245" key="GridCell.Tab.0.center" timestamp="1578752337131">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="699" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1578752337131" />
+    <state width="699" height="245" key="GridCell.Tab.0.left" timestamp="1578752337130">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="699" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1578752337130" />
+    <state width="699" height="245" key="GridCell.Tab.0.right" timestamp="1578752337132">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="699" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1578752337132" />
+    <state x="221" y="63" key="SettingsEditor" timestamp="1578750343461">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="221" y="63" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1578750343460" />
+    <state x="97" y="72" key="new project wizard" timestamp="1578749513197">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="97" y="72" key="new project wizard/0.0.1440.900@0.0.1440.900" timestamp="1578749513197" />
   </component>
 </project>

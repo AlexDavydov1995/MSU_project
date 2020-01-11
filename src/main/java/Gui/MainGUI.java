@@ -20,14 +20,6 @@ public class MainGUI {
     ExtrapolationButton extrapolationButton;
 
     JButton openDialogButton;
-    JTextField myTextField;
-
-    JTextArea myTextArea;
-    String hello = "hello";
-    String pathToTestFile = "e1n.dat";
-    String pathToSecondTestFile = "eXn.dat";
-    JTextField pathToFile1;
-    JTextField pathToFile2;
 
     public void go() {
         Logger logger = LogManager.getLogger();
@@ -38,13 +30,6 @@ public class MainGUI {
     }
 
     private void initializeElements() {
-
-
-        myTextField = new JTextField();
-        myTextArea = new JTextArea(hello);
-
-        pathToFile1 = new JTextField(hello);
-        pathToFile2 = new JTextField(hello);
 
         buttonPanel = new JPanel(new GridLayout(7, 1));
 
@@ -74,7 +59,6 @@ public class MainGUI {
         buttonPanel.add(correctButton);
         buttonPanel.add(evaluateButton);
         buttonPanel.add(sumButton);
-        buttonPanel.add(openDialogButton);
         buttonPanel.add(extrapolationButton);
 
     }
@@ -83,8 +67,6 @@ public class MainGUI {
 
         myFrame.getContentPane().add(BorderLayout.EAST, buttonPanel);
 
-        myFrame.getContentPane().add(BorderLayout.SOUTH, myTextField);
-        myFrame.getContentPane().add(BorderLayout.CENTER, myTextArea);
         myFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         myFrame.setSize(300, 300);
         myFrame.setVisible(true);

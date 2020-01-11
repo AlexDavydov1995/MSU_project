@@ -1,6 +1,9 @@
 package Gui.Buttons;
 
+import DataDealer.DataDealer;
+import FileDealer.FileDealer;
 import Gui.Trio;
+import Math.*;
 
 import javax.swing.*;
 import java.awt.*;
@@ -25,6 +28,22 @@ public class ExtrapolationButton extends BaseComplexButton implements ActionList
        JTextField pathToAnswerFile = new JTextField("");
        JLabel answerLabel = new JLabel("path to answer file:");
        JButton calculateButton = new JButton("Calculate");
+       calculateButton.addActionListener(ActionListener -> {
+           ExtrapolationCalculator calculator = new ExtrapolationCalculator();
+           String pathToSubject = subjectFile.getFilePath();
+           String pathToAbutment = abutmentFile.getFilePath();
+           DataDealer subject = new DataDealer(pathToSubject);
+           DataDealer abutment = new DataDealer(pathToAbutment);
+           try {
+               DataDealer answer = calculator.calculate(subject, abutment);
+               FileDealer fileDealer = new FileDealer();
+               String path = answer.getLabel()+".txt";
+               fileDealer.writeAFile(path, answer);
+               pathToAnswerFile.setText(path);
+           } catch(Exception ex){
+               logger.error("there is an error: " , ex);
+           }
+       });
 
        leftCalculatePanel.add(answerLabel);
        leftCalculatePanel.add(calculateButton);
