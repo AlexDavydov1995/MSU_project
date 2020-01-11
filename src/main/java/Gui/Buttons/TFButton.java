@@ -21,9 +21,9 @@ public class TFButton extends BaseComplexButton implements ActionListener {
         JFrame dialogFrame = new JFrame();
         JPanel gridPanel = new JPanel(new GridLayout(3,1));
 
-        Trio partialTrio = new Trio("enter path to partial here","e1n.dat","Browse");
+        Trio partialTrio = new Trio("enter path to partial here");
 
-        Trio yieldTrio = new Trio("enter path to yield here","eXn.dat","Browse");
+        Trio yieldTrio = new Trio("enter path to yield here");
 
         JPanel calculatePanel = new JPanel(new BorderLayout());
         JPanel leftPanel = new JPanel(new GridLayout(2,1));

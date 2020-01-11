@@ -24,7 +24,7 @@ public class CorrectButton extends JButton implements ActionListener {
 
         JPanel mainGrid = new JPanel(new GridLayout(4,1));
 
-        Trio fileToCorrect = new Trio("enter file you want to correct here","e1n.dat","Browse");
+        Trio fileToCorrect = new Trio("enter file you want to correct here");
 
         JLabel energyLabel = new JLabel("enter energy correction here:");
         JTextField energyField = new JTextField("0");
@@ -51,16 +51,11 @@ public class CorrectButton extends JButton implements ActionListener {
             }
         });
 
-
-
         mainGrid.add(fileToCorrect);
-
 
         JPanel energyGrid = new JPanel(new BorderLayout());
         JPanel ampGrid = new JPanel(new BorderLayout());
         JPanel corGrid = new JPanel(new BorderLayout());
-
-        System.out.println(energyLabel.getText());
 
         energyGrid.add(BorderLayout.WEST, energyLabel);
         energyGrid.add(energyField);

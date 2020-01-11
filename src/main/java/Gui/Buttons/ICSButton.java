@@ -37,7 +37,7 @@ public class ICSButton extends JButton implements ActionListener {
         calculatePanel.add(BorderLayout.WEST, calculateLeftPanel);
         calculatePanel.add(answerTextField);
 
-        Trio browseComponent = new Trio("Choose file", "e1n.dat", "Browse!!!");
+        Trio browseComponent = new Trio("Choose file");
 
         gridPanel.add(browseComponent);
         gridPanel.add(calculatePanel);

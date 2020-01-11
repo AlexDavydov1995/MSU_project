@@ -2,19 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="439fa1a0-8d23-4d74-8c8e-802c1e212950" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/Buttons/BaseComplexButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/Buttons/BaseComplexButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/Buttons/ExtrapolationButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/Buttons/ExtrapolationButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/MainGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/MainGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Math/IntegralCrossSectionCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Math/IntegralCrossSectionCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Gui/MainGUI$OpenDialogButtonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/MainGUI$OpenDialogButtonListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Gui/MainGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/MainGUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Math/IntegralCrossSectionCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Math/IntegralCrossSectionCalculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DataDealer/DataDealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataDealer/DataDealer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FileDealer/FileDealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FileDealer/FileDealer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/Buttons/CorrectButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/Buttons/CorrectButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/Buttons/EvaluateButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/Buttons/EvaluateButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/Buttons/ICSButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/Buttons/ICSButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/Buttons/SumButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/Buttons/SumButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/Buttons/TFButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/Buttons/TFButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/Trio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/Trio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FileDealer/FileDealer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FileDealer/FileDealer.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,29 +146,64 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="474" y="222" key="EnvironmentVariablesDialog/0.0.1440.900@0.0.1440.900" timestamp="1578749931581" />
-    <state width="699" height="245" key="GridCell.Tab.0.bottom" timestamp="1578752337133">
+    <state width="699" height="245" key="GridCell.Tab.0.bottom" timestamp="1578782950049">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="699" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1578752337133" />
-    <state width="699" height="245" key="GridCell.Tab.0.center" timestamp="1578752337131">
+    <state width="699" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1578782950049" />
+    <state width="699" height="245" key="GridCell.Tab.0.center" timestamp="1578782950048">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="699" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1578752337131" />
-    <state width="699" height="245" key="GridCell.Tab.0.left" timestamp="1578752337130">
+    <state width="699" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1578782950048" />
+    <state width="699" height="245" key="GridCell.Tab.0.left" timestamp="1578782950047">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="699" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1578752337130" />
-    <state width="699" height="245" key="GridCell.Tab.0.right" timestamp="1578752337132">
+    <state width="699" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1578782950047" />
+    <state width="699" height="245" key="GridCell.Tab.0.right" timestamp="1578782950049">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="699" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1578752337132" />
+    <state width="699" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1578782950049" />
+    <state width="699" height="303" key="GridCell.Tab.1.bottom" timestamp="1578782145775">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="699" height="303" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1578782145775" />
+    <state width="699" height="303" key="GridCell.Tab.1.bottom/0.23.1440.816@0.23.1440.816" timestamp="1578780697555" />
+    <state width="699" height="303" key="GridCell.Tab.1.center" timestamp="1578782145774">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="699" height="303" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1578782145774" />
+    <state width="699" height="303" key="GridCell.Tab.1.center/0.23.1440.816@0.23.1440.816" timestamp="1578780697554" />
+    <state width="699" height="303" key="GridCell.Tab.1.left" timestamp="1578782145774">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="699" height="303" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1578782145774" />
+    <state width="699" height="303" key="GridCell.Tab.1.left/0.23.1440.816@0.23.1440.816" timestamp="1578780697554" />
+    <state width="699" height="303" key="GridCell.Tab.1.right" timestamp="1578782145775">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="699" height="303" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1578782145775" />
+    <state width="699" height="303" key="GridCell.Tab.1.right/0.23.1440.816@0.23.1440.816" timestamp="1578780697555" />
     <state x="221" y="63" key="SettingsEditor" timestamp="1578750343461">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="221" y="63" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1578750343460" />
+    <state x="378" y="85" width="683" height="729" key="find.popup" timestamp="1578782899967">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="378" y="85" width="683" height="729" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1578782899967" />
     <state x="97" y="72" key="new project wizard" timestamp="1578749513197">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="97" y="72" key="new project wizard/0.0.1440.900@0.0.1440.900" timestamp="1578749513197" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/DataDealer/DataDealer.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
