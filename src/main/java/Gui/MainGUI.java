@@ -32,18 +32,7 @@ public class MainGUI {
 
     private void initializeElements() {
 
-<<<<<<< HEAD
-
-        myTextField = new JTextField();
-        myTextArea = new JTextArea(hello);
-
-        pathToFile1 = new JTextField(hello);
-        pathToFile2 = new JTextField(hello);
-
-        buttonPanel = new JPanel(new GridLayout(8, 1));
-=======
         buttonPanel = new JPanel(new GridLayout(7, 1));
->>>>>>> 92df47f6db3dab81e26c7ad0bae19cbe04a118f6
 
         ICSButton = new ICSButton("calculate ICS");
         ICSButton.addActionListener(ICSButton);
