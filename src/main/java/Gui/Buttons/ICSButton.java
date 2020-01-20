@@ -11,12 +11,13 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class ICSButton extends JButton implements ActionListener {
+public class ICSButton extends BaseComplexButton {
 
     public ICSButton(String name) {
         super(name);
     }
 
+    @Override
     public void actionPerformed(ActionEvent e) {
 
         JFrame dialogFrame = new JFrame();

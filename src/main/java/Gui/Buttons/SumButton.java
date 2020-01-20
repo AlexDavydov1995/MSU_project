@@ -10,12 +10,13 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class SumButton extends BaseComplexButton implements ActionListener {
+public class SumButton extends BaseComplexButton {
 
     public SumButton(String name){
         super(name);
     }
 
+    @Override
     public void actionPerformed(ActionEvent e){
 
         JFrame dialogFrame = new JFrame();
@@ -42,7 +43,7 @@ public class SumButton extends BaseComplexButton implements ActionListener {
                 DataDealer sumData = calculator.calculate(firstData,secondData);
                 FileDealer fileDealer = new FileDealer();
                 String path = sumData.getLabel() + ".txt";
-                fileDealer.writeAFile(path, sumData);
+                fileDealer.writeAFileFromDataDealer(path, sumData);
                 sumTextField.setText(path);
             }
             catch (Exception ex){

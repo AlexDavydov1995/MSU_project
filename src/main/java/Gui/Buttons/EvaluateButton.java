@@ -11,12 +11,13 @@ import java.awt.event.ActionListener;
 
 import Math.EvaluatedCrossSectionCalculator;
 
-public class EvaluateButton extends JButton implements ActionListener {
+public class EvaluateButton extends BaseComplexButton {
 
     public EvaluateButton(String name){
         super(name);
     }
 
+    @Override
     public void actionPerformed(ActionEvent e){
         JFrame dialogFrame = new JFrame();
         dialogFrame.setSize(300,150);
@@ -43,7 +44,7 @@ public class EvaluateButton extends JButton implements ActionListener {
                 DataDealer answer = calculator.calculate(tfData, abutmentData);
                 FileDealer fileDealer = new FileDealer();
                 String path = answer.getLabel()+".txt";
-                fileDealer.writeAFile(path,answer);
+                fileDealer.writeAFileFromDataDealer(path,answer);
                 answerTextField.setText(path);
             }
             catch (Exception ex){

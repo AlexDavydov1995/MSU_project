@@ -30,7 +30,7 @@ public class FileDealer {
         return fileContent.toArray(new String[fileContent.size()]);
     }
 
-    public void writeAFile(String name, DataDealer data) throws IOException {
+    public void writeAFileFromDataDealer(String name, DataDealer data) throws Exception {
         FileWriter fileWriter = new FileWriter(name, false);
         logger.info("writing file {}", name);
         fileWriter.write("");
@@ -40,6 +40,21 @@ public class FileDealer {
                         + data.getCrossSectionByIndex(i) + "\t"
                         + data.getCrossSectionErrorByIndex(i)+"\n";
                 fileWriter.append(line);
+            }
+        } catch (Exception e) {
+            logger.error("There is an error : ", e);
+            e.printStackTrace();
+        }
+        fileWriter.flush();
+    }
+
+    public void writeAFileFromStringArray(String name, String[] strings) throws Exception {
+        FileWriter fileWriter = new FileWriter(name, false);
+        logger.info("writing file {}", name);
+        fileWriter.write("");
+        try {
+            for (int i = 0; i < strings.length; i++) {
+                fileWriter.append(strings[i]);
             }
         } catch (Exception e) {
             logger.error("There is an error : ", e);

@@ -18,6 +18,7 @@ public class MainGUI {
     EvaluateButton evaluateButton;
     SumButton sumButton;
     ExtrapolationButton extrapolationButton;
+    ExforConverterButton exforConverterButton;
 
     JButton openDialogButton;
     JTextField myTextField;
@@ -46,7 +47,7 @@ public class MainGUI {
         pathToFile1 = new JTextField(hello);
         pathToFile2 = new JTextField(hello);
 
-        buttonPanel = new JPanel(new GridLayout(7, 1));
+        buttonPanel = new JPanel(new GridLayout(8, 1));
 
         ICSButton = new ICSButton("calculate ICS");
         ICSButton.addActionListener(ICSButton);
@@ -69,6 +70,9 @@ public class MainGUI {
         extrapolationButton = new ExtrapolationButton("set new energy grid");
         extrapolationButton.addActionListener(extrapolationButton);
 
+        exforConverterButton = new ExforConverterButton("ExforConverter");
+        exforConverterButton.addActionListener(exforConverterButton);
+
         buttonPanel.add(ICSButton);
         buttonPanel.add(TFButton);
         buttonPanel.add(correctButton);
@@ -76,7 +80,7 @@ public class MainGUI {
         buttonPanel.add(sumButton);
         buttonPanel.add(openDialogButton);
         buttonPanel.add(extrapolationButton);
-
+        buttonPanel.add(exforConverterButton);
     }
 
     public void attachElements(JFrame myFrame) {
@@ -86,7 +90,7 @@ public class MainGUI {
         myFrame.getContentPane().add(BorderLayout.SOUTH, myTextField);
         myFrame.getContentPane().add(BorderLayout.CENTER, myTextArea);
         myFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        myFrame.setSize(300, 300);
+        myFrame.setSize(300, 500);
         myFrame.setVisible(true);
 
     }

@@ -10,12 +10,13 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class CorrectButton extends JButton implements ActionListener {
+public class CorrectButton extends BaseComplexButton {
 
     public CorrectButton(String name){
         super(name);
     }
 
+    @Override
     public void actionPerformed(ActionEvent e){
 
         JFrame dialogFrame = new JFrame();
@@ -43,7 +44,7 @@ public class CorrectButton extends JButton implements ActionListener {
                 DataDealer corData = corCalculator.calculate(data, energyCor, ampCor);
                 FileDealer fileDealer = new FileDealer();
                 String path = corData.getLabel()+".txt";
-                fileDealer.writeAFile(path, corData);
+                fileDealer.writeAFileFromDataDealer(path, corData);
                 correctField.setText(path);
             }
             catch (Exception ex){

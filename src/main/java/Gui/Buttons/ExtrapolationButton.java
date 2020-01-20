@@ -7,11 +7,12 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class ExtrapolationButton extends BaseComplexButton implements ActionListener {
+public class ExtrapolationButton extends BaseComplexButton {
     public ExtrapolationButton(String text){
         super(text);
     }
 
+    @Override
    public void actionPerformed(ActionEvent e) {
        JFrame dialogFrame = new JFrame();
        JPanel gridPanel = new JPanel(new GridLayout(3, 1));

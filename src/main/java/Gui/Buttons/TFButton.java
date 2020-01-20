@@ -11,19 +11,20 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 
-public class TFButton extends BaseComplexButton implements ActionListener {
+public class TFButton extends BaseComplexButton {
 
     public TFButton(String name){
         super(name);
     }
 
+    @Override
     public void actionPerformed(ActionEvent e){
         JFrame dialogFrame = new JFrame();
         JPanel gridPanel = new JPanel(new GridLayout(3,1));
 
-        Trio partialTrio = new Trio("enter path to partial here","e1n.dat","Browse");
+        Trio partialTrio = new Trio("enter path to partial here","e1n.dat");
 
-        Trio yieldTrio = new Trio("enter path to yield here","eXn.dat","Browse");
+        Trio yieldTrio = new Trio("enter path to yield here","eXn.dat");
 
         JPanel calculatePanel = new JPanel(new BorderLayout());
         JPanel leftPanel = new JPanel(new GridLayout(2,1));
@@ -42,7 +43,7 @@ public class TFButton extends BaseComplexButton implements ActionListener {
                 DataDealer transitionalFunctions = calculator.calculate(partial, yield);
                 FileDealer fileDealer = new FileDealer();
                 String path = transitionalFunctions.getLabel()+".txt";
-                fileDealer.writeAFile(path, transitionalFunctions);
+                fileDealer.writeAFileFromDataDealer(path, transitionalFunctions);
                 pathToTFTextField.setText(path);
             } catch (Exception ex) {
                 ex.printStackTrace();
