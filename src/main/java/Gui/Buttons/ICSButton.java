@@ -38,7 +38,7 @@ public class ICSButton extends BaseComplexButton {
         calculatePanel.add(BorderLayout.WEST, calculateLeftPanel);
         calculatePanel.add(answerTextField);
 
-        Trio browseComponent = new Trio("Choose file", "e1n.dat", "Browse!!!");
+        Trio browseComponent = new Trio("Choose file");
 
         gridPanel.add(browseComponent);
         gridPanel.add(calculatePanel);
@@ -60,7 +60,6 @@ public class ICSButton extends BaseComplexButton {
             for (double[] subArray : array) {
                 for (double number : subArray) {
                     answer += BasicMath.quickRound(number) + " ";
-                    //System.out.println(number);
                 }
             }
             return answer;

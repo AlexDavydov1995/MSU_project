@@ -3,13 +3,12 @@ package Gui.Buttons;
 import DataDealer.DataDealer;
 import FileDealer.FileDealer;
 import Gui.Trio;
+import Math.EvaluatedCrossSectionCalculator;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
-import Math.EvaluatedCrossSectionCalculator;
 
 public class EvaluateButton extends BaseComplexButton {
 
@@ -25,8 +24,8 @@ public class EvaluateButton extends BaseComplexButton {
 
         JPanel mainGrid = new JPanel(new GridLayout(3,1));
 
-        Trio abutmentTrio = new Trio("enter abutment file here: ","SacXn.txt","Browse");
-        Trio tfTrio = new Trio("enter TF file here: ","F1.txt","Browse");
+        Trio abutmentTrio = new Trio("enter abutment file here: ");
+        Trio tfTrio = new Trio("enter TF file here: ");
 
         JPanel answerPanel = new JPanel(new BorderLayout());
         JPanel leftAnswerPanel = new JPanel(new GridLayout(2,1));

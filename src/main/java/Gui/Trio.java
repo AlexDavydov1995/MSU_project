@@ -1,12 +1,11 @@
 package Gui;
 
+import vars.GlobalVariables;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
-import vars.GlobalVariables;
-import vars.GlobalVariables.*;
 
 public class Trio extends JPanel {
     JTextField text;
@@ -42,7 +41,6 @@ public class Trio extends JPanel {
 
 
     class BrowseButtonListener implements ActionListener {
-
         @Override
         public void actionPerformed(ActionEvent e) {
             final JFileChooser fileChooser = new JFileChooser(GlobalVariables.LAST_FOLDER);
@@ -50,11 +48,9 @@ public class Trio extends JPanel {
 
             int returnVal = fileChooser.showOpenDialog(getParent());
             if (returnVal == JFileChooser.APPROVE_OPTION) {
-                System.out.println("we CAN choose file");
                 GlobalVariables.LAST_FOLDER = fileChooser.getSelectedFile().getParent();
-                String filePath = fileChooser.getSelectedFile().getAbsolutePath();
+                String filePath = fileChooser.getSelectedFile().getPath();
                 text.setText(filePath);
-                System.out.println(GlobalVariables.LAST_FOLDER);
             } else {
                 text.setText("incorrect file");
             }

@@ -21,14 +21,6 @@ public class MainGUI {
     ExforConverterButton exforConverterButton;
 
     JButton openDialogButton;
-    JTextField myTextField;
-
-    JTextArea myTextArea;
-    String hello = "hello";
-    String pathToTestFile = "e1n.dat";
-    String pathToSecondTestFile = "eXn.dat";
-    JTextField pathToFile1;
-    JTextField pathToFile2;
 
     public void go() {
         Logger logger = LogManager.getLogger();
@@ -40,6 +32,7 @@ public class MainGUI {
 
     private void initializeElements() {
 
+<<<<<<< HEAD
 
         myTextField = new JTextField();
         myTextArea = new JTextArea(hello);
@@ -48,6 +41,9 @@ public class MainGUI {
         pathToFile2 = new JTextField(hello);
 
         buttonPanel = new JPanel(new GridLayout(8, 1));
+=======
+        buttonPanel = new JPanel(new GridLayout(7, 1));
+>>>>>>> 92df47f6db3dab81e26c7ad0bae19cbe04a118f6
 
         ICSButton = new ICSButton("calculate ICS");
         ICSButton.addActionListener(ICSButton);
@@ -78,7 +74,6 @@ public class MainGUI {
         buttonPanel.add(correctButton);
         buttonPanel.add(evaluateButton);
         buttonPanel.add(sumButton);
-        buttonPanel.add(openDialogButton);
         buttonPanel.add(extrapolationButton);
         buttonPanel.add(exforConverterButton);
     }
@@ -87,8 +82,6 @@ public class MainGUI {
 
         myFrame.getContentPane().add(BorderLayout.EAST, buttonPanel);
 
-        myFrame.getContentPane().add(BorderLayout.SOUTH, myTextField);
-        myFrame.getContentPane().add(BorderLayout.CENTER, myTextArea);
         myFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         myFrame.setSize(300, 500);
         myFrame.setVisible(true);

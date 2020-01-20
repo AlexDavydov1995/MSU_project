@@ -23,8 +23,8 @@ public class SumButton extends BaseComplexButton {
 
         JPanel mainGrid = new JPanel(new GridLayout(3,1));
 
-        Trio firstFile = new Trio("enter name of first file","e1n.dat","Browse");
-        Trio secondFile = new Trio("enter name of second file","e1n.dat","Browse");
+        Trio firstFile = new Trio("enter name of first file");
+        Trio secondFile = new Trio("enter name of second file");
 
         JPanel sumBorder = new JPanel(new BorderLayout());
         JPanel sumButtonGrid = new JPanel(new GridLayout(2,1));

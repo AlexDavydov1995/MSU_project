@@ -1,11 +1,11 @@
 package FileDealer;
 
 import DataDealer.DataDealer;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.*;
 import java.util.ArrayList;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 public class FileDealer {
     Logger logger = LogManager.getRootLogger();
@@ -18,16 +18,17 @@ public class FileDealer {
             FileReader fileReader = new FileReader(myFile);
 
             BufferedReader reader = new BufferedReader(fileReader);
-            String str = null;
+            String str;
             while ((str = reader.readLine()) != null) {
                 fileContent.add(str);
             }
             reader.close();
+            return fileContent.toArray(new String[fileContent.size()]);
         } catch (Exception e) {
             logger.error("There is an error : ", e);
             e.printStackTrace();
         }
-        return fileContent.toArray(new String[fileContent.size()]);
+        return null;
     }
 
     public void writeAFileFromDataDealer(String name, DataDealer data) throws Exception {

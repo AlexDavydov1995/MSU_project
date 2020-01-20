@@ -33,7 +33,7 @@ public class DataDealer {
     public DataDealer(String fileName) {
         FileDealer fileDealer = new FileDealer();
         String[] fileData = fileDealer.readAFile(fileName);
-        label = fileName.split("\\.")[0];
+        label = fileName.substring(fileName.lastIndexOf("/")).split("\\.")[0].replaceAll("/","");
         length = fileData.length;
         energy = new double[length];
         crossSection = new double[length];

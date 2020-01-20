@@ -13,7 +13,7 @@ public class CorrectionCalculator extends BasicMath implements SemiComplexMathDe
             energy[i] = data.getEnergyByIndex(i) - energyCorrection;
             values[i] = data.getCrossSectionByIndex(i) * crossSectionCorrection;
             errors[i] = data.getCrossSectionErrorByIndex(i) * crossSectionCorrection;
-            logger.trace("current row" + energy[i]+"\t"+values[i]+"\t"+errors[i]);
+            logger.trace("current row - " + energy[i]+"\t"+values[i]+"\t"+errors[i]);
         }
         DataDealer correction = new DataDealer(energy, values, errors, "Cor" + data.getLabel());
         logger.trace(correction.toString());
