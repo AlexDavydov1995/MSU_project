@@ -2,29 +2,31 @@ import DataDealer.DataDealer;
 import junit.framework.TestCase;
 import Math.BasicMath;
 import Math.*;
-public class MathTest extends TestCase {
+import org.junit.Assert;
+import org.junit.Test;
 
-    double testValue = 123.4567778;
+public class MathTest {
 
-    double[] testEnergyArray = {1.0,2.0};
-    double[] testValueArray = {5.0,5.0};
-    double[] testNewValueArray = {10.0,10.0};
-    double[] testErrorsArray = {0.0,0.0};
+    private double testValue = 123.4567778;
+
+    private double[] testEnergyArray = {1.0,2.0};
+    private double[] testValueArray = {5.0,5.0};
+    private double[] testNewValueArray = {10.0,10.0};
+    private double[] testErrorsArray = {0.0,0.0};
 
 
+    @Test
     public void testQuickRound(){
-
-        assertEquals(123.46, BasicMath.quickRound(testValue));
+        Assert.assertEquals(123.46, BasicMath.quickRound(testValue),0.01);
     }
 
+    @Test
     public void testSum(){
-
-
         DataDealer answerData = new DataDealer(testEnergyArray,testNewValueArray,testErrorsArray,"AnswerArray");
         DataDealer testData1 = new DataDealer(testEnergyArray,testValueArray,testErrorsArray,"Answer");
         DataDealer testData2 = new DataDealer(testEnergyArray,testValueArray,testErrorsArray,"Array");
         SumCalculator calculator = new SumCalculator();
-        assertTrue(answerData.equals( calculator.calculate(testData1,testData2)));
+        Assert.assertTrue(answerData.equals(calculator.calculate(testData1, testData2)));
     }
 
 
