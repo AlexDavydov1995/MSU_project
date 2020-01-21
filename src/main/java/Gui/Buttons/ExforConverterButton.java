@@ -1,7 +1,10 @@
 package Gui.Buttons;
 
+import DataDealer.DataDealer;
+import FileDealer.FileDealer;
 import Gui.Trio;
 
+import DataDealer.ExforConverter;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -26,7 +29,18 @@ public class ExforConverterButton extends BaseComplexButton {
         JButton calculateButton = new JButton("calculate");
 
         calculateButton.addActionListener( actionEvent -> {
-
+            ExforConverter exforConverter = new ExforConverter();
+            String pathToFile = browseTrio.getFilePath();
+            DataDealer data = new DataDealer(pathToFile);
+            try{
+                String[] convertedData = exforConverter.convertToExforStrings(data);
+                FileDealer fileDealer = new FileDealer();
+                String name = "EXFOR"+data.getLabel()+".txt";
+                pathToConvertedFileTextField.setText(name);
+                fileDealer.writeAFileFromStringArray(name,convertedData);
+            } catch (Exception ex){
+                logger.error("There is an error! - ",ex);
+            }
         });
 
         leftPanel.add(pathToConvertedFile);

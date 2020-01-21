@@ -2,32 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1eae1a66-7e04-4e1a-827e-55b69174c013" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DataDealer/DataDealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataDealer/DataDealer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FileDealer/FileDealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FileDealer/FileDealer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/Buttons/BaseComplexButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/Buttons/BaseComplexButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/Buttons/CorrectButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/Buttons/CorrectButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/Buttons/EvaluateButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/Buttons/EvaluateButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/Buttons/ExtrapolationButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/Buttons/ExtrapolationButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/Buttons/ICSButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/Buttons/ICSButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/Buttons/SumButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/Buttons/SumButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/Buttons/TFButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/Buttons/TFButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/MainGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/MainGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/Trio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/Trio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Math/CorrectionCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Math/CorrectionCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Math/IntegralCrossSectionCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Math/IntegralCrossSectionCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FileDealer/FileDealer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FileDealer/FileDealer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Gui/MainGUI$OpenDialogButtonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/MainGUI$OpenDialogButtonListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Gui/MainGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/MainGUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Math/CorrectionCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Math/CorrectionCalculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Math/IntegralCrossSectionCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Math/IntegralCrossSectionCalculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DataDealer/ExforConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataDealer/ExforConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/Buttons/ExforConverterButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/Buttons/ExforConverterButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Math/BasicMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Math/BasicMath.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,6 +45,9 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1WUVNeEK191wsiK4R15ALbbjcHs" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -84,19 +68,7 @@
       <recent name="Gui" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="JUnit.ExtrapolationTest">
+  <component name="RunManager" selected="Application.Unnamed">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -115,11 +87,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Unnamed" />
+      <item itemvalue="JUnit.ExtrapolationTest" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ExtrapolationTest" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -153,5 +141,23 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="699" height="257" key="GridCell.Tab.0.bottom" timestamp="1579644825789">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="699" height="257" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1579644825789" />
+    <state width="699" height="257" key="GridCell.Tab.0.center" timestamp="1579644825787">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="699" height="257" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1579644825787" />
+    <state width="699" height="257" key="GridCell.Tab.0.left" timestamp="1579644825787">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="699" height="257" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1579644825787" />
+    <state width="699" height="257" key="GridCell.Tab.0.right" timestamp="1579644825788">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="699" height="257" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1579644825788" />
   </component>
 </project>

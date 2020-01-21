@@ -4,11 +4,14 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import DataDealer.DataDealer;
 
+import java.text.DecimalFormat;
+
 public class BasicMath {
     Logger logger = LogManager.getLogger(getClass());
 
     public static double quickRound(double number){
-        return (double )Math.round(number*100)/100;
+        DecimalFormat format = new DecimalFormat("#.##");
+        return Double.parseDouble(format.format(number));
     }
 
     public static double pow2(double number){

@@ -4,7 +4,7 @@ import Math.BasicMath;
 import vars.GlobalVariables;
 
 public class ExforConverter {
-    public static String[] convertToExforStrings(DataDealer data){
+    public  String[] convertToExforStrings(DataDealer data){
         DataDealer roundedData = roundAllNumbers(data);
         int maxEnergyLength=0;
         int maxCrossSectionLength=0;
@@ -21,7 +21,7 @@ public class ExforConverter {
             stringBuilder.append(doubleToExforString(data.getEnergyByIndex(i),maxEnergyLength));
             stringBuilder.append(doubleToExforString(data.getCrossSectionByIndex(i),maxCrossSectionLength));
             stringBuilder.append(doubleToExforString(data.getCrossSectionErrorByIndex(i),maxCrossSectionErrorLength));
-            answer[i]=stringBuilder.toString();
+            answer[i]=stringBuilder.toString()+"\n";
         }
         return answer;
     }
@@ -39,10 +39,10 @@ public class ExforConverter {
     }
 
     private static String doubleToExforString(double number, int maxLengthInArray){
-        String stringValueOfNumber =  String.valueOf(number);
-        int doubleLength = String.valueOf(number).length();
+        String stringValueOfNumber =  String.format("%.2f", number);
+        int doubleLength = stringValueOfNumber.length();
         int numberOfSpacesBeforeDouble = maxLengthInArray - doubleLength;
-        return "\\s".repeat(numberOfSpacesBeforeDouble) + stringValueOfNumber + "\\s".repeat(GlobalVariables.EXFOR_CELL_SIZE-maxLengthInArray);
+        return " ".repeat(numberOfSpacesBeforeDouble) + stringValueOfNumber + " ".repeat(GlobalVariables.EXFOR_CELL_SIZE-maxLengthInArray);
     }
 
     private static int maxLengthIteration(int currentMaxLength,double currentNumber){
@@ -50,5 +50,9 @@ public class ExforConverter {
         if(currentNumberLength>currentMaxLength)
             return currentNumberLength;
         return currentMaxLength;
+    }
+
+    private static int numberOfZerosAfterDecimalDelimiter(String stringNumber){
+        return 0;
     }
 }
