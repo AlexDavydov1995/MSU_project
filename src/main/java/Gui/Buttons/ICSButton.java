@@ -21,11 +21,18 @@ public class ICSButton extends BaseComplexButton {
     public void actionPerformed(ActionEvent e) {
 
         JFrame dialogFrame = new JFrame();
-        JPanel gridPanel = new JPanel(new GridLayout(2, 1));
+        JPanel gridPanel = new JPanel(new GridLayout(3, 1));
+        JPanel rangePanel = new JPanel(new GridLayout(1,4));
+        JLabel leftBoundLabel = new JLabel("Left bound ");
+        JTextField leftBoundTextField = new JTextField("");
+        JLabel rightBoundLabel = new JLabel("Right bound ");
+        JTextField rightBoundTextField = new JTextField("");
+        rangePanel.add(leftBoundLabel);
+        rangePanel.add(leftBoundTextField);
+        rangePanel.add(rightBoundLabel);
+        rangePanel.add(rightBoundTextField);
         JPanel calculatePanel = new JPanel(new BorderLayout());
-        dialogFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        dialogFrame.setSize(300, 150);
-        dialogFrame.setVisible(true);
+
 
 
         JPanel calculateLeftPanel = new JPanel(new GridLayout(2, 1));
@@ -40,6 +47,7 @@ public class ICSButton extends BaseComplexButton {
 
         Trio browseComponent = new Trio("Choose file");
 
+        gridPanel.add(rangePanel);
         gridPanel.add(browseComponent);
         gridPanel.add(calculatePanel);
 
@@ -52,6 +60,8 @@ public class ICSButton extends BaseComplexButton {
             double[][] answer = intCalculator.calculate(data);
             answerTextField.setText(new DoubleArrayToStringConverter().convert(answer));
         });
+
+        finalizeButton(dialogFrame);
     }
 
      static class DoubleArrayToStringConverter {

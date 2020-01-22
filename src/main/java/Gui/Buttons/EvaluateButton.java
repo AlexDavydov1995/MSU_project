@@ -19,8 +19,6 @@ public class EvaluateButton extends BaseComplexButton {
     @Override
     public void actionPerformed(ActionEvent e){
         JFrame dialogFrame = new JFrame();
-        dialogFrame.setSize(300,150);
-        dialogFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
         JPanel mainGrid = new JPanel(new GridLayout(3,1));
 
@@ -62,6 +60,6 @@ public class EvaluateButton extends BaseComplexButton {
 
         dialogFrame.add(mainGrid);
 
-        dialogFrame.setVisible(true);
+        finalizeButton(dialogFrame);
     }
 }

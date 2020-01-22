@@ -17,7 +17,7 @@ public class BaseComplexButton extends JButton implements ActionListener {
 
     void finalizeButton(JFrame baseFrame) {
         baseFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        baseFrame.setSize(300, 150);
+        baseFrame.setSize(400, 150);
         baseFrame.setVisible(true);
     }
     public void actionPerformed(ActionEvent event){
