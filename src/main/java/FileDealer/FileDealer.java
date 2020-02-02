@@ -5,16 +5,17 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.*;
+import java.nio.file.Path;
 import java.util.ArrayList;
 
 public class FileDealer {
     Logger logger = LogManager.getRootLogger();
 
-    public String[] readAFile(String fileName) {
-        logger.info("reading file {}",fileName);
+    public String[] readAFile(Path filePath) {
+        logger.info("reading file {}",filePath);
         ArrayList<String> fileContent = new ArrayList<>();
         try {
-            File myFile = new File(fileName);
+            File myFile = new File(String.valueOf(filePath));
             FileReader fileReader = new FileReader(myFile);
 
             BufferedReader reader = new BufferedReader(fileReader);

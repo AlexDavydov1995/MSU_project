@@ -6,6 +6,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class Trio extends JPanel {
     JTextField text;
@@ -35,8 +37,8 @@ public class Trio extends JPanel {
         this(textOfLabel, "");
     }
 
-    public String getFilePath() {
-        return text.getText();
+    public Path getFilePath() {
+        return Paths.get(text.getText());
     }
 
 
@@ -49,8 +51,8 @@ public class Trio extends JPanel {
             int returnVal = fileChooser.showOpenDialog(getParent());
             if (returnVal == JFileChooser.APPROVE_OPTION) {
                 GlobalVariables.LAST_FOLDER = fileChooser.getSelectedFile().getParent();
-                String filePath = fileChooser.getSelectedFile().getPath();
-                text.setText(filePath);
+                Path filePath = fileChooser.getSelectedFile().toPath();
+                text.setText(filePath.toString());
             } else {
                 text.setText("incorrect file");
             }

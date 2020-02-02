@@ -2,6 +2,8 @@ package DataDealer;
 
 import FileDealer.FileDealer;
 import Math.BasicMath;
+
+import java.nio.file.Path;
 import java.util.Arrays;
 
 public class DataDealer {
@@ -13,9 +15,9 @@ public class DataDealer {
 
     public DataDealer(double[] energy, double[] values, double[] errors, String label) {
         assert checkLength(energy,values,errors);
-        this.energy = energy;
-        this.crossSection = values;
-        this.crossSectionError = errors;
+        this.energy = roundArray(energy);
+        this.crossSection = roundArray(values);
+        this.crossSectionError = roundArray(errors);
         this.length = energy.length;
         this.label = label;
     }
@@ -30,10 +32,10 @@ public class DataDealer {
         return res;
     }
 
-    public DataDealer(String fileName) {
+    public DataDealer(Path filePath) {
         FileDealer fileDealer = new FileDealer();
-        String[] fileData = fileDealer.readAFile(fileName);
-        label = fileName.substring(fileName.lastIndexOf("/")).split("\\.")[0].replaceAll("/","");
+        String[] fileData = fileDealer.readAFile(filePath);
+        label = filePath.getFileName().toString();
         length = fileData.length;
         energy = new double[length];
         crossSection = new double[length];
@@ -110,6 +112,13 @@ public class DataDealer {
 
     public DataDealer copy(){
         return new DataDealer(this.getEnergy(), this.getCrossSection(), this.getCrossSectionError(), this.getLabel());
+    }
+
+    private static double[] roundArray(double[] array){
+        double[] answer = new double[array.length];
+        for(int i=0;i<array.length;i++)
+            answer[i]=BasicMath.quickRound(array[i]);
+        return answer;
     }
 
 }

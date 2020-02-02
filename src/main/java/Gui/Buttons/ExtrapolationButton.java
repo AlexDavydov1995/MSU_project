@@ -9,6 +9,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.nio.file.Path;
 
 public class ExtrapolationButton extends BaseComplexButton {
     public ExtrapolationButton(String text){
@@ -31,8 +32,8 @@ public class ExtrapolationButton extends BaseComplexButton {
        JButton calculateButton = new JButton("Calculate");
        calculateButton.addActionListener(ActionListener -> {
            ExtrapolationCalculator calculator = new ExtrapolationCalculator();
-           String pathToSubject = subjectFile.getFilePath();
-           String pathToAbutment = abutmentFile.getFilePath();
+           Path pathToSubject = subjectFile.getFilePath();
+           Path pathToAbutment = abutmentFile.getFilePath();
            DataDealer subject = new DataDealer(pathToSubject);
            DataDealer abutment = new DataDealer(pathToAbutment);
            try {

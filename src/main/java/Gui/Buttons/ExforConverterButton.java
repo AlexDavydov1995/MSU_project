@@ -5,9 +5,11 @@ import FileDealer.FileDealer;
 import Gui.Trio;
 
 import DataDealer.ExforConverter;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.nio.file.Path;
 
 public class ExforConverterButton extends BaseComplexButton {
     public ExforConverterButton(String text) {
@@ -30,7 +32,7 @@ public class ExforConverterButton extends BaseComplexButton {
 
         calculateButton.addActionListener( actionEvent -> {
             ExforConverter exforConverter = new ExforConverter();
-            String pathToFile = browseTrio.getFilePath();
+            Path pathToFile = browseTrio.getFilePath();
             DataDealer data = new DataDealer(pathToFile);
             try{
                 String[] convertedData = exforConverter.convertToExforStrings(data);

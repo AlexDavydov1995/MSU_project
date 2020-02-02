@@ -10,6 +10,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.nio.file.Path;
 
 public class ICSButton extends BaseComplexButton {
 
@@ -54,7 +55,7 @@ public class ICSButton extends BaseComplexButton {
         dialogFrame.getContentPane().add(gridPanel);
 
         submitButton.addActionListener(actionEvent -> {
-            String path = browseComponent.getFilePath();
+            Path path = browseComponent.getFilePath();
             DataDealer data = new DataDealer(path);
             IntegralCrossSectionCalculator intCalculator = new IntegralCrossSectionCalculator();
             double[][] answer = intCalculator.calculate(data);
