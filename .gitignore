@@ -5,4 +5,4 @@ logs
 .idea
 */target/**
 .DS_Store
-target:wq
+target
