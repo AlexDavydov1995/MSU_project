@@ -2,17 +2,25 @@ import Gui.MainGUI;
 
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
+import vars.RunVariables;
 
 public class MainClass {
     static final Logger logger = LogManager.getLogger(MainClass.class.getName());
     public static void main(String... args) {
         logger.info("It started");
+        prepareRuntimeEnvironment();
         go();
     }
 
-    public static void go() {
+    private static void go() {
         MainGUI myGui = new MainGUI();
         logger.info("maingui created");
         myGui.go();
     }
+
+    private static void prepareRuntimeEnvironment(){
+        RunVariables.FILE_SEPARATOR = System.getProperty("file.separator");
+    }
+
+
 }

@@ -4,6 +4,7 @@ import FileDealer.FileDealer;
 import Math.BasicMath;
 
 import java.nio.file.Path;
+import vars.RunVariables;
 import java.util.Arrays;
 
 public class DataDealer {
@@ -109,7 +110,6 @@ public class DataDealer {
         return this.label+"\t"+this.length;
     }
 
-
     public DataDealer copy(){
         return new DataDealer(this.getEnergy(), this.getCrossSection(), this.getCrossSectionError(), this.getLabel());
     }
@@ -121,4 +121,7 @@ public class DataDealer {
         return answer;
     }
 
+    public void cutDataOutOfRange(double leftBound, double rightBound){
+
+    }
 }

@@ -1,5 +1,5 @@
 *.txt
-**/workspace.xml
+*/workspace.xml
 logs
 **/out
 **/.idea

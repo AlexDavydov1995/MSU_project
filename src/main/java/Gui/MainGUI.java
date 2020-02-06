@@ -3,6 +3,7 @@ package Gui;
 import Gui.Buttons.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import vars.RunVariables;
 
 import javax.swing.*;
 import java.awt.*;
@@ -24,7 +25,7 @@ public class MainGUI {
 
     public void go() {
         Logger logger = LogManager.getLogger();
-        logger.info(getClass());
+        logger.info(RunVariables.FILE_SEPARATOR);
         JFrame myFrame = new JFrame();
         initializeElements();
         attachElements(myFrame);
