@@ -5,12 +5,11 @@
         <Console name="console" target="SYSTEM_OUT">
             <PatternLayout pattern="%d{HH:mm:ss} %c{2} [%t] %2p - %m%n"/>
         </Console>
-        <File name="file" fileName="logs/MyMsuProject.log" level="info">
-            <PatternLayout pattern="%d{HH:mm:ss} %c{2} [%t] %2p - %m%n"/>
+        <File name="file" fileName="logs/MyMsuProject.log">
+            <PatternLayout pattern="%d{dd.MM.yyyy HH:mm:ss} %c{2} [%t] %2p - %m%n"/>
         </File>
         <RollingFile name="rollingLog"
                      fileName="logs/rollingLog.log"
-                     level="info"
                      filePattern="logs/rollingLog-%d{yyyy-MM-dd}-%i.log.gz">
             <PatternLayout pattern="%d{HH:mm:ss} %c{2} [%t] %2p - %m%n"/>
             <Policies>
@@ -31,8 +30,8 @@
         </Logger>
         <Root level="all">
             <AppenderRef ref="console"/>
-            <AppenderRef ref="file"/>
-            <AppenderRef ref="rollingLog"/>
+            <AppenderRef ref="file" level="info"/>
+            <AppenderRef ref="rollingLog" level="info"/>
         </Root>
     </Loggers>
 </Configuration>

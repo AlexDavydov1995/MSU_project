@@ -14,7 +14,7 @@ public class TransitionalFunctionsCalculator extends BasicMath implements Comple
 
         for (int i = 0; i < length; i++) {
             if (!checkIfEnergyMatches(partial.getEnergyByIndex(i), yield.getEnergyByIndex(i))) {
-                throw new Exception("energies dont match");
+                throw new Exception("energies don't match");
             }
 
             energy[i] = partial.getEnergyByIndex(i);
