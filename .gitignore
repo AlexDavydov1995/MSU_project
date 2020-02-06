@@ -3,5 +3,5 @@
 logs
 **/out
 .idea
-target
+target/*
 .DS_Store

@@ -21,7 +21,7 @@ public class MainClass {
     }
 
     private static void prepareRuntimeEnvironment(){
-        Locale.setDefault(Locale.US);
+        //Locale.setDefault(Locale.US);
         RunVariables.FILE_SEPARATOR = System.getProperty("file.separator");
     }
 

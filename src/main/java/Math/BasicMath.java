@@ -10,7 +10,7 @@ public class BasicMath {
     Logger logger = LogManager.getLogger(getClass());
 
     public static double quickRound(double number){
-        DecimalFormat format = new DecimalFormat("#.##");
+        DecimalFormat format = new DecimalFormat("0.00");
         return Double.parseDouble(format.format(number));
     }
 
