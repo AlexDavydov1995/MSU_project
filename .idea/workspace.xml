@@ -1,83 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1eae1a66-7e04-4e1a-827e-55b69174c013" name="Default Changelist" comment="0">
+    <list default="true" id="3b34f4ae-bf75-4798-808d-5117ddb51925" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-
       <change beforePath="$PROJECT_DIR$/src/main/java/DataDealer/DataDealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataDealer/DataDealer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/MainGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/MainGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ExtrapolationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ExtrapolationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MathTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MathTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/MainGUI$OpenDialogButtonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/MainGUI$OpenDialogButtonListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/MainGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/MainGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CodeStyleSettingsInfer">
-    <option name="done" value="true" />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
+        <option value="Tag Library Descriptor" />
       </list>
     </option>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectCodeStyleSettingsMigration">
-    <option name="version" value="1" />
-  </component>
-  <component name="ProjectId" id="1WUVNeEK191wsiK4R15ALbbjcHs" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
-    <option name="showLibraryContents" value="true" />
-    <option name="showMembers" value="true" />
-  </component>
   <component name="PropertiesComponent">
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="findjar.last.used.dir" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.16015625" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="Gui" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MSU_project\src\test\resources" />
     </key>
   </component>
-<<<<<<< Updated upstream
-  <component name="RunManager" selected="JUnit.MathTest.testDelta">
-=======
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -91,10 +53,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Unnamed">
->>>>>>> Stashed changes
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="11" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="MainClass" />
       <module name="MSU_project" />
       <method v="2">
@@ -110,11 +69,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MathTest.testDelta" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ExtrapolationTest.testExtrapolationFirst" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MSU_project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ExtrapolationTest" />
+      <option name="METHOD_NAME" value="testExtrapolationFirst" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MathTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MSU_project" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MathTest" />
-      <option name="METHOD_NAME" value="testDelta" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MathTest.testQuickRound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MSU_project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MathTest" />
+      <option name="METHOD_NAME" value="testQuickRound" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MathTest.testQuickRoundWithTwoNumbersAfterPoint" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MSU_project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MathTest" />
+      <option name="METHOD_NAME" value="testQuickRoundWithTwoNumbersAfterPoint" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -122,13 +110,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Unnamed" />
+      <item itemvalue="JUnit.MathTest.testQuickRound" />
+      <item itemvalue="JUnit.MathTest.testQuickRoundWithTwoNumbersAfterPoint" />
+      <item itemvalue="JUnit.MathTest" />
       <item itemvalue="JUnit.ExtrapolationTest" />
-      <item itemvalue="JUnit.MathTest.testDelta" />
+      <item itemvalue="JUnit.ExtrapolationTest.testExtrapolationFirst" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MathTest.testDelta" />
         <item itemvalue="JUnit.ExtrapolationTest" />
+        <item itemvalue="JUnit.ExtrapolationTest.testExtrapolationFirst" />
+        <item itemvalue="JUnit.MathTest" />
+        <item itemvalue="JUnit.MathTest.testQuickRoundWithTwoNumbersAfterPoint" />
+        <item itemvalue="JUnit.MathTest.testQuickRound" />
       </list>
     </recent_temporary>
   </component>
@@ -136,96 +130,43 @@
     <configuration />
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="1eae1a66-7e04-4e1a-827e-55b69174c013" name="Default Changelist" comment="" />
-      <created>1579204122839</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1579204122839</updated>
-      <workItem from="1579204126952" duration="5539000" />
-      <workItem from="1579346565779" duration="2366000" />
-      <workItem from="1579382523898" duration="3885000" />
-      <workItem from="1579552188722" duration="3968000" />
-      <workItem from="1579808201478" duration="2411000" />
-      <workItem from="1581016863806" duration="842000" />
-    </task>
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="UnknownFeatures">
-    <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="WindowStateProjectService">
-    <state x="320" y="115" key="#Notifications" timestamp="1580635955400">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="320" y="115" key="#Notifications/0.0.1440.900@0.0.1440.900" timestamp="1580635955400" />
-    <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser" timestamp="1580644418981">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1580644418981" />
-    <state x="344" y="53" key="CommitChangelistDialog2" timestamp="1580636815797">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="344" y="53" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1580636815797" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1580643790283">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1580643790283" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1580643790282">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1580643790282" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1580643790282">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1580643790282" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1580643790283">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1580643790283" />
-    <state width="699" height="303" key="GridCell.Tab.1.bottom" timestamp="1579733409709">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="699" height="303" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1579733409709" />
-    <state width="699" height="303" key="GridCell.Tab.1.center" timestamp="1579733409708">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="699" height="303" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1579733409708" />
-    <state width="699" height="303" key="GridCell.Tab.1.left" timestamp="1579733409707">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="699" height="303" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1579733409707" />
-    <state width="699" height="303" key="GridCell.Tab.1.right" timestamp="1579733409708">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="699" height="303" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1579733409708" />
-    <state x="208" y="31" key="SettingsEditor" timestamp="1579733384513">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="208" y="31" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1579733384513" />
-    <state x="378" y="207" width="683" height="486" key="find.popup" timestamp="1579813775410">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="378" y="207" width="683" height="486" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1579813775410" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1580636820422">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1580636820422" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/MathTest.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/MainClass.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/MainClass.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/MainClass.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

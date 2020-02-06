@@ -1,5 +1,6 @@
 package DataDealer;
 
+import org.apache.commons.io.FilenameUtils;
 import FileDealer.FileDealer;
 import Math.BasicMath;
 
@@ -36,7 +37,7 @@ public class DataDealer {
     public DataDealer(Path filePath) {
         FileDealer fileDealer = new FileDealer();
         String[] fileData = fileDealer.readAFile(filePath);
-        label = filePath.getFileName().toString();
+        label = FilenameUtils.removeExtension(filePath.getFileName().toString());
         length = fileData.length;
         energy = new double[length];
         crossSection = new double[length];

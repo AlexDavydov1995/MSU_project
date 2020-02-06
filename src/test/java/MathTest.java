@@ -1,13 +1,12 @@
 import DataDealer.DataDealer;
-import junit.framework.TestCase;
 import Math.BasicMath;
 import Math.*;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class MathTest {
+import java.util.Locale;
 
-    private double testValue = 123.4567778;
+public class MathTest {
 
     private double[] testEnergyArray = {1.0,2.0};
     private double[] testValueArray = {5.0,5.0};
@@ -19,7 +18,17 @@ public class MathTest {
 
     @Test
     public void testQuickRound(){
+        Locale.setDefault(Locale.US);
+        double testValue = 123.4567778;
         Assert.assertEquals(123.46, BasicMath.quickRound(testValue),0.01);
+    }
+
+    @Test
+    public void testQuickRoundWithTwoNumbersAfterPoint(){
+        double testValue = 123.0;
+        String stringValue = String.valueOf(BasicMath.quickRound(testValue));
+        Assert.assertEquals("123.0", stringValue);
+
     }
 
     @Test

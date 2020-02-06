@@ -1,7 +1,8 @@
 import DataDealer.DataDealer;
-import junit.framework.TestCase;
 import Math.*;
 import org.junit.*;
+
+import java.util.Locale;
 
 
 public class ExtrapolationTest {
@@ -9,6 +10,7 @@ public class ExtrapolationTest {
 
     @Test
     public void testExtrapolationFirst(){
+        Locale.setDefault(Locale.US);
         double[] abutmentEnergies = {1.0, 2.0, 3.0, 4.0};
         double[] abutmentValues = {1.0,1.0, 1.0,1.0};
         double[] abutmentErrors = {0.0,0.0,0.0,0.0};
@@ -34,6 +36,7 @@ public class ExtrapolationTest {
 
     @Test
     public void testExtrapolationSecond(){
+        Locale.setDefault(Locale.US);
         double[] abutmentEnergies = {0.0,1.0, 2.0, 3.0, 4.0, 5.0};
         double[] abutmentValues = {0,100,200, 300,400,0};
         double[] abutmentErrors = {0.0,0.0,0.0,0.0,0.0,0.0};
@@ -60,6 +63,7 @@ public class ExtrapolationTest {
 
     @Test
     public void testExtrapolationThird(){
+        Locale.setDefault(Locale.US);
         double[] abutmentEnergies = {1.0, 2.0, 3.0, 4.0};
         double[] abutmentValues = {1.0,1, 1,1};
         double[] abutmentErrors = {0.0,0.0,0.0,0.0};
@@ -87,6 +91,7 @@ public class ExtrapolationTest {
     @Ignore("test is working - round issue")
     @Test
     public void testExtrapolationForth(){
+        Locale.setDefault(Locale.US);
         double[] abutmentEnergies = {1.0, 2.0, 3.0, 4.0, 5.0,6.0};
         double[] abutmentValues = {100,200, 300,400,500,600};
         double[] abutmentErrors = {0.0,0.0,0.0,0.0,0.0,0.0};

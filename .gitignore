@@ -2,6 +2,6 @@
 */workspace.xml
 logs
 **/out
-**/.idea
-**/target
+.idea
+target
 .DS_Store
