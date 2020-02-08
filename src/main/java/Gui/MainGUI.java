@@ -24,8 +24,8 @@ public class MainGUI {
     JButton openDialogButton;
 
     public void go() {
-        Logger logger = LogManager.getLogger();
-        logger.info(RunVariables.FILE_SEPARATOR);
+        //Logger logger = LogManager.getLogger();
+        //logger.info(RunVariables.FILE_SEPARATOR);
         JFrame myFrame = new JFrame();
         initializeElements();
         attachElements(myFrame);

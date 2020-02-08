@@ -19,10 +19,15 @@
     </Appenders>
 
     <Loggers>
-        <Logger name="MainClass" level="info" additivity="false"/>
+        <Logger name="MainClass" level="info" additivity="false">
+            <AppenderRef ref="file"/>
+            <AppenderRef ref="rollingLog"/>
+            <AppenderRef ref="console"/>
+        </Logger>
         <Logger name="BasicMath" level="trace" additivity="false">
             <AppenderRef ref="file"/>
             <AppenderRef ref="rollingLog"/>
+            <AppenderRef ref="console"/>
         </Logger>
         <Logger name="FileReader" level="info" additivity="false">
             <AppenderRef ref="file"/>
