@@ -48,6 +48,7 @@ public class FileDealer {
             e.printStackTrace();
         }
         fileWriter.flush();
+        fileWriter.close();
     }
 
     public void writeAFileFromStringArray(String name, String[] strings) throws Exception {
@@ -63,5 +64,6 @@ public class FileDealer {
             e.printStackTrace();
         }
         fileWriter.flush();
+        fileWriter.close();
     }
 }

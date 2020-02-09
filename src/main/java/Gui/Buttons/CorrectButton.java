@@ -43,7 +43,7 @@ public class CorrectButton extends BaseComplexButton {
                 CorrectionCalculator corCalculator = new CorrectionCalculator();
                 DataDealer corData = corCalculator.calculate(data, energyCor, ampCor);
                 FileDealer fileDealer = new FileDealer();
-                String path = corData.getLabel()+".txt";
+                String path = setFullPath(corData.getLabel()+".txt");
                 fileDealer.writeAFileFromDataDealer(path, corData);
                 correctField.setText(path);
             }

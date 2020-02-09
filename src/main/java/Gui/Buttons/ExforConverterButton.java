@@ -37,7 +37,7 @@ public class ExforConverterButton extends BaseComplexButton {
             try{
                 String[] convertedData = exforConverter.convertToExforStrings(data);
                 FileDealer fileDealer = new FileDealer();
-                String name = "EXFOR"+data.getLabel()+".txt";
+                String name = setFullPath("EXFOR"+data.getLabel()+".txt");
                 pathToConvertedFileTextField.setText(name);
                 fileDealer.writeAFileFromStringArray(name,convertedData);
             } catch (Exception ex){

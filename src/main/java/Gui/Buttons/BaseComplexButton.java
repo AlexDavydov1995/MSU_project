@@ -2,12 +2,14 @@ package Gui.Buttons;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import vars.GlobalVariables;
+import vars.RunVariables;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class BaseComplexButton extends JButton implements ActionListener {
+public abstract class BaseComplexButton extends JButton implements ActionListener {
 
     Logger logger = LogManager.getLogger(getClass().getName());
 
@@ -15,7 +17,7 @@ public class BaseComplexButton extends JButton implements ActionListener {
         super(text);
     }
 
-    void finalizeButton(JFrame baseFrame) {
+    protected void finalizeButton(JFrame baseFrame) {
         baseFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         baseFrame.setSize(400, 150);
         baseFrame.setVisible(true);
@@ -23,4 +25,9 @@ public class BaseComplexButton extends JButton implements ActionListener {
     public void actionPerformed(ActionEvent event){
 
     }
+
+    protected String setFullPath(String fileName){
+        return GlobalVariables.LAST_FOLDER+ RunVariables.FILE_SEPARATOR+fileName;
+    }
+
 }

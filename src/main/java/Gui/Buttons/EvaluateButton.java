@@ -40,7 +40,7 @@ public class EvaluateButton extends BaseComplexButton {
                 EvaluatedCrossSectionCalculator calculator = new EvaluatedCrossSectionCalculator();
                 DataDealer answer = calculator.calculate(tfData, abutmentData);
                 FileDealer fileDealer = new FileDealer();
-                String path = answer.getLabel()+".txt";
+                String path = setFullPath(answer.getLabel()+".txt");
                 fileDealer.writeAFileFromDataDealer(path,answer);
                 answerTextField.setText(path);
             }

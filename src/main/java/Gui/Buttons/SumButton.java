@@ -42,7 +42,7 @@ public class SumButton extends BaseComplexButton {
                 SumCalculator calculator = new SumCalculator();
                 DataDealer sumData = calculator.calculate(firstData,secondData);
                 FileDealer fileDealer = new FileDealer();
-                String path = sumData.getLabel() + ".txt";
+                String path = setFullPath(sumData.getLabel() + ".txt");
                 fileDealer.writeAFileFromDataDealer(path, sumData);
                 sumTextField.setText(path);
             }

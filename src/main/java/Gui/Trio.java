@@ -1,6 +1,7 @@
 package Gui;
 
 import vars.GlobalVariables;
+import vars.RunVariables;
 
 import javax.swing.*;
 import java.awt.*;
@@ -50,7 +51,7 @@ public class Trio extends JPanel {
 
             int returnVal = fileChooser.showOpenDialog(getParent());
             if (returnVal == JFileChooser.APPROVE_OPTION) {
-                GlobalVariables.LAST_FOLDER = fileChooser.getSelectedFile().getParent();
+                GlobalVariables.LAST_FOLDER = fileChooser.getSelectedFile().getParent()+ RunVariables.FILE_SEPARATOR;
                 Path filePath = fileChooser.getSelectedFile().toPath();
                 text.setText(filePath.toString());
             } else {

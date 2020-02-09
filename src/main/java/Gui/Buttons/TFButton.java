@@ -42,7 +42,7 @@ public class TFButton extends BaseComplexButton {
                 TransitionalFunctionsCalculator calculator = new TransitionalFunctionsCalculator();
                 DataDealer transitionalFunctions = calculator.calculate(partial, yield);
                 FileDealer fileDealer = new FileDealer();
-                String path = transitionalFunctions.getLabel()+".txt";
+                String path = setFullPath(transitionalFunctions.getLabel()+".txt");
                 fileDealer.writeAFileFromDataDealer(path, transitionalFunctions);
                 pathToTFTextField.setText(path);
             } catch (Exception ex) {
