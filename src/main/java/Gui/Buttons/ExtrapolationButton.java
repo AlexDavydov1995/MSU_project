@@ -4,12 +4,10 @@ import DataDealer.DataDealer;
 import FileDealer.FileDealer;
 import Gui.Trio;
 import Math.*;
-import vars.GlobalVariables;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.nio.file.Path;
 
 public class ExtrapolationButton extends BaseComplexButton {
@@ -40,7 +38,7 @@ public class ExtrapolationButton extends BaseComplexButton {
            try {
                DataDealer answer = calculator.calculate(subject, abutment);
                FileDealer fileDealer = new FileDealer();
-               String path = GlobalVariables.LAST_FOLDER+answer.getLabel()+".txt";
+               String path = setFullPath(answer.getLabel()+".txt");
                fileDealer.writeAFileFromDataDealer(path, answer);
                pathToAnswerFile.setText(path);
            } catch(Exception ex){

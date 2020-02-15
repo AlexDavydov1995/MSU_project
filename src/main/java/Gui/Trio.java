@@ -1,6 +1,6 @@
 package Gui;
 
-import vars.GlobalVariables;
+import FileDealer.JFileChooserWrapper;
 import vars.RunVariables;
 
 import javax.swing.*;
@@ -46,12 +46,12 @@ public class Trio extends JPanel {
     class BrowseButtonListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-            final JFileChooser fileChooser = new JFileChooser(GlobalVariables.LAST_FOLDER);
+            final JFileChooserWrapper fileChooser = new JFileChooserWrapper();
             fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
 
             int returnVal = fileChooser.showOpenDialog(getParent());
             if (returnVal == JFileChooser.APPROVE_OPTION) {
-                GlobalVariables.LAST_FOLDER = fileChooser.getSelectedFile().getParent()+ RunVariables.FILE_SEPARATOR;
+                fileChooser.setLastFolder(fileChooser.getSelectedFile().getParent()+RunVariables.FILE_SEPARATOR);
                 Path filePath = fileChooser.getSelectedFile().toPath();
                 text.setText(filePath.toString());
             } else {

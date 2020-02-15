@@ -1,8 +1,8 @@
 package Gui.Buttons;
 
+import FileDealer.JFileChooserWrapper;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import vars.GlobalVariables;
 import vars.RunVariables;
 
 import javax.swing.*;
@@ -27,7 +27,7 @@ public abstract class BaseComplexButton extends JButton implements ActionListene
     }
 
     protected String setFullPath(String fileName){
-        return GlobalVariables.LAST_FOLDER+ RunVariables.FILE_SEPARATOR+fileName;
+        return JFileChooserWrapper.getLastFolder() + RunVariables.FILE_SEPARATOR+fileName;
     }
 
 }
