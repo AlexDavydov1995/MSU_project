@@ -1,7 +1,7 @@
 import DataDealer.DataDealer;
-import Math.BasicMath;
+import static Math.BasicMath.*;
 import Math.*;
-import org.junit.Assert;
+import static org.junit.Assert.*;
 import org.junit.Test;
 
 import java.util.Locale;
@@ -20,15 +20,15 @@ public class MathTest {
     public void testQuickRound(){
         Locale.setDefault(Locale.US);
         double testValue = 123.4567778;
-        Assert.assertEquals(123.46, BasicMath.quickRound(testValue),0.01);
+        assertEquals(123.46, quickRound(testValue),0.01);
     }
 
     @Test
     public void testQuickRoundWithTwoNumbersAfterPoint(){
+        Locale.setDefault(Locale.US);
         double testValue = 123.0;
-        String stringValue = String.valueOf(BasicMath.quickRound(testValue));
-        Assert.assertEquals("123.0", stringValue);
-
+        String stringValue = String.valueOf(quickRound(testValue));
+        assertEquals("123.0", stringValue);
     }
 
     @Test
@@ -37,7 +37,7 @@ public class MathTest {
         DataDealer testData1 = new DataDealer(testEnergyArray,testValueArray,testErrorsArray,"Answer");
         DataDealer testData2 = new DataDealer(testEnergyArray,testValueArray,testErrorsArray,"Array");
         SumCalculator calculator = new SumCalculator();
-        Assert.assertTrue(answerData.equals(calculator.calculate(testData1, testData2)));
+        assertTrue(answerData.equals(calculator.calculate(testData1, testData2)));
     }
 
     @Test
@@ -46,10 +46,6 @@ public class MathTest {
         DataDealer minuend = new DataDealer(testEnergyArray, testMinuendArray,testErrorsArray, "minuend");
         DataDealer answer = new DataDealer(testEnergyArray, onesArray,testErrorsArray, "answer");
         DeltaCalculator calculator = new DeltaCalculator();
-        Assert.assertTrue(answer.equalsIgnoreLabel(calculator.calculate(minuend,subtract)));
+        assertTrue(answer.equalsIgnoreLabel(calculator.calculate(minuend,subtract)));
     }
-
-
-
-
 }

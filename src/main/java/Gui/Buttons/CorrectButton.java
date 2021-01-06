@@ -12,18 +12,18 @@ import java.awt.event.ActionListener;
 
 public class CorrectButton extends BaseComplexButton {
 
-    public CorrectButton(String name){
+    public CorrectButton(String name) {
         super(name);
     }
 
     @Override
-    public void actionPerformed(ActionEvent e){
+    public void actionPerformed(ActionEvent e) {
 
         JFrame dialogFrame = new JFrame();
         dialogFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        dialogFrame.setSize(400,200);
+        dialogFrame.setSize(400, 200);
 
-        JPanel mainGrid = new JPanel(new GridLayout(4,1));
+        JPanel mainGrid = new JPanel(new GridLayout(4, 1));
 
         Trio fileToCorrect = new Trio("enter file you want to correct here");
 
@@ -43,12 +43,11 @@ public class CorrectButton extends BaseComplexButton {
                 CorrectionCalculator corCalculator = new CorrectionCalculator();
                 DataDealer corData = corCalculator.calculate(data, energyCor, ampCor);
                 FileDealer fileDealer = new FileDealer();
-                String path = setFullPath(corData.getLabel()+".txt");
+                String path = setFullPath(corData.getLabel() + ".txt");
                 fileDealer.writeAFileFromDataDealer(path, corData);
                 correctField.setText(path);
-            }
-            catch (Exception ex){
-                ex.printStackTrace();
+            } catch (Exception ex) {
+                logger.error("There is an error", ex);
             }
         });
 

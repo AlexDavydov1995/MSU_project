@@ -19,5 +19,4 @@ public class CorrectionCalculator extends BasicMath implements SemiComplexMathDe
         logger.trace(correction.toString());
         return correction;
     }
-
 }

@@ -20,6 +20,7 @@ public class MainGUI {
     SumButton sumButton;
     ExtrapolationButton extrapolationButton;
     ExforConverterButton exforConverterButton;
+    DeltaButton deltaButton;
 
     JButton openDialogButton;
 
@@ -33,7 +34,7 @@ public class MainGUI {
 
     private void initializeElements() {
 
-        buttonPanel = new JPanel(new GridLayout(7, 1));
+        buttonPanel = new JPanel(new GridLayout(8, 1));
 
         ICSButton = new ICSButton("calculate ICS");
         ICSButton.addActionListener(ICSButton);
@@ -59,6 +60,9 @@ public class MainGUI {
         exforConverterButton = new ExforConverterButton("ExforConverter");
         exforConverterButton.addActionListener(exforConverterButton);
 
+        deltaButton = new DeltaButton("DeltaButton");
+        deltaButton.addActionListener(deltaButton);
+
         buttonPanel.add(ICSButton);
         buttonPanel.add(TFButton);
         buttonPanel.add(correctButton);
@@ -66,6 +70,7 @@ public class MainGUI {
         buttonPanel.add(sumButton);
         buttonPanel.add(extrapolationButton);
         buttonPanel.add(exforConverterButton);
+        buttonPanel.add(deltaButton);
     }
 
     public void attachElements(JFrame myFrame) {

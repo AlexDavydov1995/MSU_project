@@ -33,6 +33,4 @@ public class BasicMath {
             throw new Exception("arrays have not the same length");
         }
     }
-
-
 }
