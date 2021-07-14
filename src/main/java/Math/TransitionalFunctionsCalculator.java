@@ -30,6 +30,8 @@ public class TransitionalFunctionsCalculator extends BasicMath implements Comple
                 try {
                     errors[i] = Math.sqrt(pow2(1 / yield.getCrossSectionByIndex(i) * partial.getCrossSectionErrorByIndex(i)) +
                             pow2((partial.getCrossSectionByIndex(i) / pow2(yield.getCrossSectionByIndex(i) * yield.getCrossSectionErrorByIndex(i)))));
+                    if(Double.isInfinite(errors[i]))
+                        errors[i] = Double.MAX_VALUE;
                 } catch (ArithmeticException e) {
                 }
             }

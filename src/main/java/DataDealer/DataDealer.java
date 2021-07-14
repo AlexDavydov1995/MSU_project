@@ -118,7 +118,7 @@ public class DataDealer {
     private static double[] roundArray(double[] array){
         double[] answer = new double[array.length];
         for(int i=0;i<array.length;i++)
-            answer[i]=BasicMath.quickRound(array[i]);
+            answer[i]=BasicMath.quickRound(array[i], 4);
         return answer;
     }
 

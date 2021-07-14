@@ -9,8 +9,11 @@ import java.text.DecimalFormat;
 public class BasicMath {
     Logger logger = LogManager.getLogger(getClass());
 
-    public static double quickRound(double number){
-        DecimalFormat format = new DecimalFormat("0.00");
+    public static double quickRound(double number, int round){
+        StringBuilder pattern = new StringBuilder("0.");
+        for(int i=0;i<round;i++)
+            pattern.append("0");
+        DecimalFormat format = new DecimalFormat(pattern.toString());
         return Double.parseDouble(format.format(number));
     }
 

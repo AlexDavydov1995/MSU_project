@@ -10,7 +10,6 @@ public class ExtrapolationTest {
 
     @Ignore("test is working - round issue")
     @Test
-    @Ignore
     public void testExtrapolationFirst(){
         Locale.setDefault(Locale.US);
         double[] abutmentEnergies = {1.0, 2.0, 3.0, 4.0};
@@ -66,7 +65,6 @@ public class ExtrapolationTest {
 
     @Ignore("test is working - round issue")
     @Test
-    @Ignore
     public void testExtrapolationThird(){
         Locale.setDefault(Locale.US);
         double[] abutmentEnergies = {1.0, 2.0, 3.0, 4.0};

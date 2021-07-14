@@ -70,7 +70,7 @@ public class ICSButton extends BaseComplexButton {
             String answer = "";
             for (double[] subArray : array) {
                 for (double number : subArray) {
-                    answer += BasicMath.quickRound(number) + " ";
+                    answer += BasicMath.quickRound(number,2) + " ";
                 }
             }
             return answer;

@@ -20,14 +20,14 @@ public class MathTest {
     public void testQuickRound(){
         Locale.setDefault(Locale.US);
         double testValue = 123.4567778;
-        assertEquals(123.46, quickRound(testValue),0.01);
+        assertEquals(123.46, quickRound(testValue, 2),0.01);
     }
 
     @Test
     public void testQuickRoundWithTwoNumbersAfterPoint(){
         Locale.setDefault(Locale.US);
         double testValue = 123.0;
-        String stringValue = String.valueOf(quickRound(testValue));
+        String stringValue = String.valueOf(quickRound(testValue, 2));
         assertEquals("123.0", stringValue);
     }
 

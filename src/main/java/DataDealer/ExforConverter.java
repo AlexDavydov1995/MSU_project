@@ -31,9 +31,9 @@ public class ExforConverter {
         double[] crossSection =data.getCrossSection();
         double[] crossSectionError = data.getCrossSectionError();
         for(int i=0;i<data.getLength();i++){
-            energy[i] = BasicMath.quickRound(energy[i]);
-            crossSection[i]=BasicMath.quickRound(crossSection[i]);
-            crossSectionError[i]=BasicMath.quickRound(crossSectionError[i]);
+            energy[i] = BasicMath.quickRound(energy[i],2);
+            crossSection[i]=BasicMath.quickRound(crossSection[i],2);
+            crossSectionError[i]=BasicMath.quickRound(crossSectionError[i],2);
         }
         return new DataDealer(energy,crossSection,crossSectionError,data.getLabel());
     }
